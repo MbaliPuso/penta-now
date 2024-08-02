@@ -1,5 +1,6 @@
 import React from "react";
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.png';
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -12,12 +13,12 @@ const Header = () => {
         </div>
         <div className="site-mobile-menu-body" />
       </div>
-      <header className="site-navbar site-navbar-target position-fixed" role="banner">
+      <header className="site-navbar site-navbar-target position-fixed bg-white">
         <div className="container">
           <div className="row align-items-center position-relative">
             <div className="col-3">
               <div className="site-logo">
-                <a href="index.html">
+                <a href="/">
                   <img src={logo} alt="Penta Now logo" style={{ width: '200px' }} />
                 </a>
               </div>
@@ -34,29 +35,29 @@ const Header = () => {
               >
                 <ul className="site-menu main-menu js-clone-nav ml-auto ">
                   <li className="active">
-                    <a href="index.html" className="nav-link">
+                    <Link to='/sell-my-car' className="nav-link">
                       Sell a car
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="listing.html" className="nav-link">
+                    <Link to='/buy-a-car' className="nav-link">
                       Buy a car
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="testimonials.html" className="nav-link">
+                    <Link to='/penta-approved' className="nav-link">
                       Penta Approved
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="about.html" className="nav-link">
+                    <Link to='/our-locations' className="nav-link">
                       Our locations
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="contact.html" className="nav-link">
-                      Coctact Us
-                    </a>
+                    <Link to='/contact-us' className="nav-link">
+                      Contact Us
+                    </Link>
                   </li>
                 </ul>
               </nav>
