@@ -1,0 +1,33 @@
+.sell-car-heading {
+    padding: 0px 30px;
+}
+
+.selling-ul {
+    list-style-type: none;
+    padding: 0;
+    /* text-align: center; */
+    margin: 0 200px;
+}
+
+.card {
+    border: 1px solid #2a74e7;
+    border-radius: 20px;
+} 
+
+.item {
+    padding: 15px;
+}
+
+/* .item .in {
+    display: flex;
+    align-items: center;
+} */
+
+.icon {
+    width: 36px;
+}
+
+.circle-check-icon {
+    background-color: #1DCC70;
+    color: #ffffff;
+}

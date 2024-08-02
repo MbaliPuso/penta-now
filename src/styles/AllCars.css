@@ -1,0 +1,84 @@
+.top-bar {
+    background-color: #d8d7da;
+    width: 100%;
+    border-radius: 15px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+
+#minPrice::placeholder {
+    font-size: 16px;
+    color: #495057;
+}
+
+#maxPrice::placeholder {
+    font-size: 16px;
+    color: #495057;
+}
+
+#minYear::placeholder {
+    font-size: 16px;
+    color: #495057;
+}
+
+#minYear::placeholder {
+    font-size: 16px;
+    color: #495057;
+}
+
+.horizontal-line {
+    margin: 50px 0;
+}
+
+/* .top-bar-type {
+    border-bottom: 10 solid #000000;
+    height: 40px;
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+    vertical-align: middle;
+    width: calc(100% + 15px);
+} */
+
+.vehicle-card {
+    border: 1px solid #E6E9F3;
+    border-radius: 20px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.car-image {
+    display: block;
+    margin: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.car-title {
+    color: #27173E;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.mileage, .transmission, .year {
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.vehicle-details {
+   text-align: center;
+   padding: 8px;
+}
+
+.price {
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.branch {
+    font-size: 10px;
+    margin-top: 2px;
+}
+
+.view-details-button {
+    padding: 5px 10px;
+    font-size: 13px;
+}

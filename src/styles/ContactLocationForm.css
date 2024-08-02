@@ -1,0 +1,41 @@
+.contact-location {
+    margin: 100px 0 0 0;
+    padding: 0 20px;
+}
+
+.small-contact {
+    color: #2a74e7;
+    font-weight: 600;
+    padding-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+.contact-p {
+    color: #2a74e7;
+    font-weight: 600;
+    font-size: calc(1.5rem + 2.6vw);
+}
+
+.name-surname {
+    margin: 0 1px
+}
+
+.agree-text {
+    color: #92acf2;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 30px;
+    padding-bottom: 25px;
+    margin-left: 15px;
+}
+
+button {
+    background-color: #2a74e7;
+    color: #ffffff;
+    font-size: 17px;
+    border-radius: 17px;
+    border: none;
+    padding: 18px 35px;
+    line-height: normal;
+}
+

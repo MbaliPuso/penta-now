@@ -1,0 +1,25 @@
+.spec-items {
+    padding: 17px;
+}
+
+.spec-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.spec-title {
+    font-size: 13px;
+    color: #A9ABAD;
+}
+
+.spec-title-value {
+    color: #28a745;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.spec-value {
+    font-size: 16px;
+    font-weight: bold;
+    color: #27173E;
+}

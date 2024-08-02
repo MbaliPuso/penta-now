@@ -1,0 +1,63 @@
+.fill-in-text {
+    text-align: center;
+}
+
+.sell-car-form {
+    display: block;
+    margin: auto;
+    max-width: 60%;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#make::placeholder {
+    font-size: 17px;
+}
+
+#model::placeholder {
+    font-size: 17px;
+}
+
+#fullName::placeholder {
+    font-size: 17px;
+}
+
+#mobile::placeholder {
+    font-size: 17px;
+}
+#email::placeholder {
+    font-size: 17px;
+}
+
+.item {
+    border: 1px solid #3D65CE;
+    border-radius: 25px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-left: 12px;
+    width: 100%;
+}
+
+.icon {
+    height: 36px;
+    background-color: #1DCC70;
+    color: #ffffff;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+}
+
+.sell-car-fill {
+    max-width: 100%;
+    border: 1px solid #3D65CE;
+    border-radius: 25px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    padding: 15px 60px;
+}
+
+.rounded-3 {
+    border-radius: 15px;
+}

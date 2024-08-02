@@ -1,0 +1,21 @@
+.contact-form {
+    max-width: 85%;
+    display: block;
+    margin: auto;
+    padding-top: 120px;
+}
+
+.contact-us-form {
+    border: 1px solid #DDE4F7;
+    border-radius: 15px;
+    padding: 8px;
+}
+
+.fill-in-details {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #27173e;
+    font-size: 20px;
+    padding-left: 15px;
+}

@@ -1,0 +1,55 @@
+.location-container {
+    background-color: rgb(22, 66, 185);
+}
+
+.introduction {
+    color: #ffffff;
+    text-align: center;
+    padding: 120px 0 90px 0;
+}
+
+.location-small-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 60px;
+    padding-bottom: 30px;
+}
+
+.location-description {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: calc(1.4rem + 2.6vw);
+}
+
+.card {
+    border-radius: 30px;
+}
+
+.card-body {
+    padding: 0 15px;
+}
+
+.directions-card {
+    text-align: center;
+    padding: 16px;
+}
+
+.branch-name {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.branch-address, .branch-number, .email-address {
+    color: #92acf2;
+    line-height: 30px;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.get-directions-image {
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+}
