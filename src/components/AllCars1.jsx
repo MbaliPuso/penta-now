@@ -1,156 +1,238 @@
-import React from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import "../styles/AllCars.css";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 //import { Link } from "react-router-dom";
 import carOne from "../assets/Mercedes-Benz-B-class.jpg";
 import carTwo from "../assets/chevrolet-utility.jpg";
 import carThree from "../assets/nissan-qashqai.jpg";
 import carFour from "../assets/Honda_Jazz.jpg";
+import carFive from "../assets/datsun-go.jpg";
 
 const AllCars = () => {
+  // Cars data
+  const cars = useMemo(
+    () => [
+      {
+        image: carOne,
+        type: "Hatch",
+        make: "Mercedes Benz",
+        model: "B-class",
+        variant: "B180",
+        year: 2011,
+        mileage: 192323,
+        price: "99 950",
+        engine: 1800,
+        fuel: "Petrol",
+        transmission: "Automatic",
+        color: "Comet Grey",
+        branch: "Lynnwood",
+        stockNo: "UNL10023",
+        serviceHistory: "yes",
+      },
+      {
+        image: carTwo,
+        type: "Hatch",
+        make: "Chevrolet",
+        model: "Utility",
+        variant: "1.4 A/C Pick Up",
+        year: 2014,
+        mileage: 86000,
+        price: "117 900",
+        engine: 1400,
+        fuel: "Diesel",
+        transmission: "Manual",
+        color: "WHITE",
+        branch: "Centurion",
+        stockNo: "PCU10006",
+        serviceHistory: "yes",
+      },
+      {
+        image: carThree,
+        type: "SUV",
+        make: "Nissan",
+        model: "Qashqai",
+        variant: "2.0 ACENTA CVT",
+        year: 2012,
+        mileage: 181000,
+        price: "119 900",
+        engine: 2,
+        fuel: "Petrol",
+        transmission: "CVT",
+        color: "Metallic Silky Silver",
+        branch: "Gezina",
+        stockNo: "UNG38",
+        serviceHistory: "yes",
+      },
+      {
+        image: carFour,
+        type: "Hatchback",
+        make: "Honda",
+        model: "Jazz",
+        variant: "1.2 COMFORT",
+        year: 2016,
+        mileage: 130000,
+        price: "129 900",
+        engine: 1200,
+        fuel: "Petrol",
+        transmission: "Manual",
+        color: "WHITE",
+        branch: "Centurion",
+        stockNo: "PCU10067",
+        serviceHistory: "yes",
+      },
+      {
+        image: carFive,
+        type: "Hatchback",
+        make: "Datsun",
+        model: "Go",
+        variant: "1.2 LUX",
+        year: 2020,
+        mileage: 52200,
+        price: "129 900",
+        engine: 1200,
+        fuel: "Petrol",
+        transmission: "Manual",
+        color: "Silver",
+        branch: "Gezina",
+        stockNo: "UNG36",
+        serviceHistory: "yes",
+      },
+      {
+        image: carOne,
+        type: "Hatch",
+        make: "Mercedes Benz",
+        model: "B-class",
+        variant: "B180",
+        year: 2011,
+        mileage: 192323,
+        price: "99 950",
+        engine: 1800,
+        fuel: "Petrol",
+        transmission: "Automatic",
+        color: "Comet Grey",
+        branch: "Lynnwood",
+        stockNo: "UNL10023",
+        serviceHistory: "yes",
+      },
+      {
+        image: carTwo,
+        type: "Hatch",
+        make: "Chevrolet",
+        model: "Utility",
+        variant: "1.4 A/C Pick Up",
+        year: 2014,
+        mileage: 86000,
+        price: "117 900",
+        engine: 1400,
+        fuel: "Diesel",
+        transmission: "Manual",
+        color: "WHITE",
+        branch: "Centurion",
+        stockNo: "PCU10006",
+        serviceHistory: "yes",
+      },
+      {
+        image: carThree,
+        type: "SUV",
+        make: "Nissan",
+        model: "Qashqai",
+        variant: "2.0 ACENTA CVT",
+        year: 2012,
+        mileage: 181000,
+        price: "119 900",
+        engine: 2,
+        fuel: "Petrol",
+        transmission: "CVT",
+        color: "Metallic Silky Silver",
+        branch: "Gezina",
+        stockNo: "UNG38",
+        serviceHistory: "yes",
+      },
+      {
+        image: carFour,
+        type: "Hatchback",
+        make: "Honda",
+        model: "Jazz",
+        variant: "1.2 COMFORT",
+        year: 2016,
+        mileage: 130000,
+        price: "129 900",
+        engine: 1200,
+        fuel: "Petrol",
+        transmission: "Manual",
+        color: "WHITE",
+        branch: "Centurion",
+        stockNo: "PCU10067",
+        serviceHistory: "yes",
+      },
+      {
+        image: carFive,
+        type: "Hatchback",
+        make: "Datsun",
+        model: "Go",
+        variant: "1.2 LUX",
+        year: 2020,
+        mileage: 52200,
+        price: "129 900",
+        engine: 1200,
+        fuel: "Petrol",
+        transmission: "Manual",
+        color: "Silver",
+        branch: "Gezina",
+        stockNo: "UNG36",
+        serviceHistory: "yes",
+      },
+    ],
+    []
+  );
+
   const navigate = useNavigate();
-  const cars = [
-    {
-      image: carOne,
-      type: "Hatch",
-      make: "Mercedes Benz",
-      model: "B-class",
-      variant: "B180",
-      year: 2011,
-      mileage: 192323,
-      price: 99950,
-      engine: 1800,
-      fuel: "Petrol",
-      transmission: "Automatic",
-      color: "Comet Grey",
-      branch: "Lynnwood",
-      stockNo: "UNL10023",
-      serviceHistory: "yes",
-    },
-    {
-      image: carTwo,
-      type: "Hatch",
-      make: "Chevrolet",
-      model: "Utility",
-      variant: "1.4 A/C Pick Up",
-      year: 2014,
-      mileage: 86000,
-      price: 117900,
-      engine: 1400,
-      fuel: "Diesel",
-      transmission: "Manual",
-      color: "WHITE",
-      branch: "Centurion",
-      stockNo: "PCU10006",
-      serviceHistory: "yes",
-    },
-    {
-      image: carThree,
-      type: "SUV",
-      make: "Nissan",
-      model: "Qashqai",
-      variant: "2.0 ACENTA CVT",
-      year: 2012,
-      mileage: 181000,
-      price: 119900,
-      engine: 2,
-      fuel: "Petrol",
-      transmission: "CVT",
-      color: "Metallic Silky Silver",
-      branch: "Gezina",
-      stockNo: "UNG38",
-      serviceHistory: "yes",
-    },
-    {
-      image: carFour,
-      type: "Hatchback",
-      make: "Honda",
-      model: "Jazz",
-      variant: "1.2 COMFORT",
-      year: 2016,
-      mileage: 130000,
-      price: 129900,
-      engine: 1200,
-      fuel: "Petrol",
-      transmission: "Manual",
-      color: "WHITE",
-      branch: "Centurion",
-      stockNo: "PCU10067",
-      serviceHistory: "yes",
-    },
-    {
-      image: carOne,
-      type: "Hatch",
-      make: "Mercedes Benz",
-      model: "B-class",
-      variant: "B180",
-      year: 2011,
-      mileage: 192323,
-      price: 99950,
-      engine: 1800,
-      fuel: "Petrol",
-      transmission: "Automatic",
-      color: "Comet Grey",
-      branch: "Lynnwood",
-      stockNo: "UNL10023",
-      serviceHistory: "yes",
-    },
-    {
-      image: carTwo,
-      type: "Hatch",
-      make: "Chevrolet",
-      model: "Utility",
-      variant: "1.4 A/C Pick Up",
-      year: 2014,
-      mileage: 86000,
-      price: 117900,
-      engine: 1400,
-      fuel: "Diesel",
-      transmission: "Manual",
-      color: "WHITE",
-      branch: "Centurion",
-      stockNo: "PCU10006",
-      serviceHistory: "yes",
-    },
-    {
-      image: carThree,
-      type: "SUV",
-      make: "Nissan",
-      model: "Qashqai",
-      variant: "2.0 ACENTA CVT",
-      year: 2012,
-      mileage: 181000,
-      price: 119900,
-      engine: 2,
-      fuel: "Petrol",
-      transmission: "CVT",
-      color: "Metallic Silky Silver",
-      branch: "Gezina",
-      stockNo: "UNG38",
-      serviceHistory: "yes",
-    },
-    {
-      image: carFour,
-      type: "Hatchback",
-      make: "Honda",
-      model: "Jazz",
-      variant: "1.2 COMFORT",
-      year: 2016,
-      mileage: 130000,
-      price: 129900,
-      engine: 1200,
-      fuel: "Petrol",
-      transmission: "Manual",
-      color: "WHITE",
-      branch: "Centurion",
-      stockNo: "PCU10067",
-      serviceHistory: "yes",
-    },
-  ];
+  const [makeFilter, setMakeFilter] = useState("");
+  const [modelFilter, setModelFilter] = useState("");
+  const [mileageFilter, setMileageFilter] = useState("");
+  const [branchFilter, setBranchFilter] = useState("");
+  const [fuelFilter, setFuelFilter] = useState("");
+  const [transmissionFilter, setTransmissionFilter] = useState("");
+  const [minPrice, setMinPrice] = useState("");
+  const [maxPrice, setMaxPrice] = useState("");
+  const [minYear, setMinYear] = useState("");
+  const [maxYear, setMaxYear] = useState("");
+  const [filteredCars, setFilteredCars] = useState([]);
 
   const viewVehicle = (car) => {
-    navigate('/view-vehicle', { state: {car} })
-};
+    navigate("/view-vehicle", { state: { car } });
+  };
+
+  useEffect(() => {
+    // Filter cars based on selected filters
+    let filtered = cars.filter((car) => {
+      return (
+        (!makeFilter || car.make === makeFilter) &&
+        (!modelFilter || car.model === modelFilter) &&
+        (!mileageFilter || car.mileage <= parseInt(mileageFilter, 10)) &&
+        (!branchFilter || car.branch === branchFilter) &&
+        (!fuelFilter || car.fuel === fuelFilter) &&
+        (!transmissionFilter || car.transmission === transmissionFilter) &&
+        (!minPrice || car.price >= parseInt(minPrice, 10)) &&
+        (!maxPrice || car.price <= parseInt(maxPrice, 10)) &&
+        (!minYear || car.year >= parseInt(minYear, 10)) &&
+        (!maxYear || car.year <= parseInt(maxYear, 10))
+      );
+    });
+    setFilteredCars(filtered);
+  }, [
+    cars,
+    makeFilter,
+    modelFilter,
+    mileageFilter,
+    branchFilter,
+    fuelFilter,
+    transmissionFilter,
+    minPrice,
+    maxPrice,
+    minYear,
+    maxYear,
+  ]);
 
   return (
     <>
@@ -170,7 +252,6 @@ const AllCars = () => {
               <div className="col-md-12">
                 <form
                   id="select-form"
-                  action
                   method="POST"
                   encType="multipart/form-data"
                   style={{ display: "flex" }}
@@ -180,8 +261,10 @@ const AllCars = () => {
                       id="makeFilter"
                       data-filter="make"
                       className="filter-make filter form-control"
+                      value={makeFilter}
+                      onChange={(e) => setMakeFilter(e.target.value)}
                     >
-                      <option value>Make</option>
+                      <option value="">Make</option>
                       <option>BMW</option>
                       <option>Chery</option>
                       <option>Chevrolet</option>
@@ -211,99 +294,44 @@ const AllCars = () => {
                       id="modelFilter"
                       data-filter="model"
                       className="filter-model filter form-control"
+                      value={modelFilter}
+                      onChange={(e) => setModelFilter(e.target.value)}
+                      disabled={!makeFilter}
                     >
-                      <option value>Model</option>
-                      <option>1 Series (e81/87)</option>
-                      <option>1400/np200</option>
-                      <option>2014 Chevrolet Utility</option>
-                      <option>All New Jimmy</option>
-                      <option>Amarok</option>
-                      <option>ASX</option>
-                      <option>B-class</option>
-                      <option>Baleno</option>
-                      <option>Bllade 2011 - On</option>
-                      <option>C5</option>
-                      <option>Caddy</option>
-                      <option>Celerio</option>
-                      <option>Ciaz</option>
-                      <option>Creta</option>
-                      <option>D-max</option>
-                      <option>Duster</option>
-                      <option>Ecosport</option>
-                      <option>Go</option>
-                      <option>Grand Vitara</option>
-                      <option>H1</option>
-                      <option>H100 / Bakkie</option>
-                      <option>H2</option>
-                      <option>H2/ Jolian</option>
-                      <option>Hilux</option>
-                      <option>Hilux 2016 On</option>
-                      <option>Jazz</option>
-                      <option>Jimny</option>
-                      <option>Juke</option>
-                      <option>Kb 2004 - 2019</option>
-                      <option>Kiger</option>
-                      <option>KUV 100</option>
-                      <option>Kwid</option>
-                      <option>Land Cruiser 70 Series</option>
-                      <option>Land Cruiser Pick Up</option>
-                      <option>Magnite</option>
-                      <option>Magnite21</option>
-                      <option>Micra</option>
-                      <option>Navara</option>
-                      <option>New Swift</option>
-                      <option>NP200</option>
-                      <option>Omoda</option>
-                      <option>Patrol 5.6 V8 Le Premium</option>
-                      <option>Pik Up</option>
-                      <option>Polo</option>
-                      <option>Polo Playa / Polo</option>
-                      <option>Polo Vivo</option>
-                      <option>Prada 2002- On</option>
-                      <option>Qashqai</option>
-                      <option>Ranger</option>
-                      <option>Ranger 2007 - 2022</option>
-                      <option>Rav 4</option>
-                      <option>Rio</option>
-                      <option>S-presso</option>
-                      <option>Scorpio</option>
-                      <option>Sportage</option>
-                      <option>Starlet</option>
-                      <option>T-cross</option>
-                      <option>Territory / Everest</option>
-                      <option>Tiggo</option>
-                      <option>Tiggo 7 Pro</option>
-                      <option>Tiguan 1.4 TSI</option>
-                      <option>Toyota Land Cruiser</option>
-                      <option>Triber</option>
-                      <option>Urban Cruiser</option>
-                      <option>Vitara</option>
-                      <option>Vitara / Vitara Brezza 2008 - On</option>
-                      <option>Vitera Brezza</option>
-                      <option>X Trail</option>
-                      <option>XI</option>
-                      <option>XUV 300</option>
+                      <option value="">Model</option>
+                      
+                      {cars
+                        .filter((car) => car.make === makeFilter)
+                        .map((car, index) => (
+                          <option key={index} value={car.model}>
+                            {car.model}
+                          </option>
+                        ))}
                     </select>
                   </div>
                   <div className="col-md-3">
                     <select
-                      id="makeFilter"
+                      id="mileageFilter"
                       data-filter="mileage"
                       className="filter-mileage filter form-control"
+                      value={mileageFilter}
+                      onChange={(e) => setMileageFilter(e.target.value)}
                     >
-                      <option value>Mileage</option>
-                      <option value="<10000">&lt;10000 KM</option>
-                      <option value="<50000">&lt;50000 KM</option>
-                      <option value="<150000">&lt;150000 KM</option>
-                      <option value="200000">20000 KM</option>
+                      <option value="">Mileage</option>
+                      <option value="10000">&lt;10000 KM</option>
+                      <option value="50000">&lt;50000 KM</option>
+                      <option value="150000">&lt;150000 KM</option>
+                      <option value="200000">200000 KM</option>
                     </select>
                   </div>
                   <div className="col-md-3">
                     <select
                       id="branchFilter"
                       className="filter-branch filter form-control"
+                      value={branchFilter}
+                      onChange={(e) => setBranchFilter(e.target.value)}
                     >
-                      <option value>All Branches</option>
+                      <option value="">All Branches</option>
                       <option value="Centurion">Centurion</option>
                       <option value="Lynnwood">Lynnwood</option>
                       <option value="Gezina">Gezina</option>
@@ -323,18 +351,19 @@ const AllCars = () => {
               <div className="col-md-12">
                 <form
                   id="select-form"
-                  action
                   method="POST"
                   encType="multipart/form-data"
                   style={{ display: "flex" }}
                 >
                   <div className="col-md-3">
                     <select
-                      id="makeFilter"
+                      id="fuelFilter"
                       data-filter="fuel"
                       className="filter-fuel filter form-control"
+                      value={fuelFilter}
+                      onChange={(e) => setFuelFilter(e.target.value)}
                     >
-                      <option value>Fuel Type</option>
+                      <option value="">Fuel Type</option>
                       <option>Petrol</option>
                       <option>Diesel</option>
                     </select>
@@ -344,13 +373,16 @@ const AllCars = () => {
                     style={{ marginRight: 6, marginLeft: 6 }}
                   >
                     <select
-                      id="modelFilter"
+                      id="transmissionFilter"
                       data-filter="transmission"
                       className="filter-transmission filter form-control"
+                      value={transmissionFilter}
+                      onChange={(e) => setTransmissionFilter(e.target.value)}
                     >
-                      <option value>Transmission</option>
+                      <option value="">Transmission</option>
                       <option>Manual</option>
                       <option>Automatic</option>
+                      <option>CVT</option>
                     </select>
                   </div>
                   <div
@@ -361,10 +393,12 @@ const AllCars = () => {
                       <div className="exchange-group small">
                         <div className="input-col">
                           <input
-                            type="textarea"
-                            className="form-control form-control-lg pe-0 price-range"
+                            type="number"
+                            className="form-control filter pe-0 price-range"
                             id="minPrice"
                             placeholder="Min Price"
+                            value={minPrice}
+                            onChange={(e) => setMinPrice(e.target.value)}
                           />
                         </div>
                       </div>
@@ -373,10 +407,12 @@ const AllCars = () => {
                       <div className="exchange-group small">
                         <div className="input-col">
                           <input
-                            type="textarea"
-                            className="form-control form-control-lg pe-0"
+                            type="number"
+                            className="form-control filter pe-0"
                             id="maxPrice"
                             placeholder="Max Price"
+                            value={maxPrice}
+                            onChange={(e) => setMaxPrice(e.target.value)}
                           />
                         </div>
                       </div>
@@ -390,10 +426,12 @@ const AllCars = () => {
                       <div className="exchange-group small">
                         <div className="input-col">
                           <input
-                            type="textarea"
-                            className="form-control form-control-lg pe-0 price-range"
+                            type="number"
+                            className="form-control filter pe-0 price-range"
                             id="minYear"
                             placeholder="Min Year"
+                            value={minYear}
+                            onChange={(e) => setMinYear(e.target.value)}
                           />
                         </div>
                       </div>
@@ -402,40 +440,43 @@ const AllCars = () => {
                       <div className="exchange-group small">
                         <div className="input-col">
                           <input
-                            type="textarea"
-                            className="form-control form-control-lg pe-0"
+                            type="number"
+                            className="form-control filter pe-0"
                             id="maxYear"
                             placeholder="Max Year"
+                            value={maxYear}
+                            onChange={(e) => setMaxYear(e.target.value)}
                           />
                         </div>
                       </div>
                     </div>
                   </div>
                 </form>
-                <hr className="horizontal-line" />
-                {/* search input */}
-                
               </div>
             </div>
-            {/* All the cars are listed here */}
-            <div className="container mt-5">
-              <div className="row">
-                {cars.map((car, index) => (
-                  <div
-                    key={index}
-                    className="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 mb-4 car"
-                  >
-                    <div className="card vehicle-card" onClick={() => viewVehicle(car)}>
-                      <img
-                        src={car.image}
-                        alt={car.name}
-                        className="car-image"
-                        height={152}
-                        width={203}
-                      />
-                      <div className="vehicle-details">
-                        <div style={{ color: '#123594' }}>
-                      <h5 className="car-title">{car.make} <span> - {car.model}</span></h5>
+          </div>
+
+          <div className="container mt-5">
+            <div className="row">
+              {filteredCars.map((car, index) => (
+                <div
+                  key={index}
+                  className="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 mb-4 car"
+                >
+                  <div className="card vehicle-card">
+                    <img
+                      src={car.image}
+                      className="car-image"
+                      alt={car.make}
+                      height={152}
+                      // width={250}
+                    />
+                    <div className="vehicle-details">
+                      <div style={{ color: "#123594" }}>
+                        <h5 className="car-title">
+                          {car.make} <span> - {car.model}</span>
+                        </h5>
+                      
                       <div className="row car-details">
                         <div className="col-4 mileage p-0">
                           <div>
@@ -473,17 +514,23 @@ const AllCars = () => {
                       </div>
                       <div className="price"><strong>R {car.price}</strong></div>
                       </div>
-                      <button className="view-details-button">
+                      <button
+                        onClick={() => viewVehicle(car)}
+                        className="view-details-button"
+                      >
                         View Details
                       </button>
                       <div className="branch">{car.branch}</div>
                     </div>
                   </div>
-                  </div>
-                ))}
-              </div>
+                </div>
+              ))}
+              {filteredCars.length === 0 && (
+                <div className="col-12">
+                  <p className="text-center">No cars match your filters.</p>
+                </div>
+              )}
             </div>
-            {/* End list cars */}
           </div>
         </div>
       </div>

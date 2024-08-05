@@ -1,0 +1,19 @@
+.home-intro {
+    text-align: center;
+}
+
+.small-home-heading {
+    font-size: 1.2rem;
+    color: #7a8496;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.featured-vehicles-heading {
+    font-size: 2rem;
+    color: #000000;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}

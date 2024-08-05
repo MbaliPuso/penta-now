@@ -11,7 +11,7 @@ const LocationList = () => {
           <h2 className="location-description">Visit A Branch <br /> Near You.</h2>
         </div>
         <div className="row">
-            <div className="card w-80 directions-card card-body col-4 bg-transparent">
+            <div className="card w-80 directions-card card-body col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 bg-transparent">
                 <h3 className="branch-name">Centurion</h3>
                 <p className="branch-address">3 Lenchen Ave, Centurion Central, Centurion, 0014</p>
                 <p className="branch-number">Call : <a href="tel:0846398663" style={{ color: '#ffffff' }}>084 639 8663</a></p>
@@ -20,7 +20,7 @@ const LocationList = () => {
                 <img src={direction} alt="Get direction to Centurion penta" className="get-directions-image" />
                 </a>
             </div>
-            <div className="card w-80 directions-card card-body col-4 bg-transparent">
+            <div className="card w-80 directions-card card-body col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 bg-transparent">
                 <h3 className="branch-name">Gezina</h3>
                 <p className="branch-address">103 SteveBiko Road, Wonderboom South, Gauteng</p>
                 <p className="branch-number">Call : <a href="tel:0834885391" style={{ color: '#ffffff' }}>084 639 8663</a></p>
@@ -29,7 +29,7 @@ const LocationList = () => {
                 <img src={direction} alt="Get direction to Centurion penta" className="get-directions-image" />
                 </a>
             </div>
-            <div className="card directions-card card-body col-4 bg-transparent">
+            <div className="card directions-card card-body col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 bg-transparent">
                 <h3 className="branch-name">Brits</h3>
                 <p className="branch-address">73 Spoorweg, Brits, North West Province, South Africa</p>
                 <p className="branch-number">Call : <a href="tel:0794880244" style={{ color: '#ffffff' }}>079 488 0244</a></p>
@@ -40,7 +40,7 @@ const LocationList = () => {
             </div>
         </div>
         <div className="row">
-        <div className="card directions-card card-body col-4 bg-transparent border-outline">
+        <div className="card directions-card card-body col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 bg-transparent border-outline">
                 <h3 className="branch-name">Mokopane</h3>
                 <p className="branch-address">102 Thabo Mbeki Drive, Mokopane Drive, Limpopo, 0601</p>
                 <p className="branch-number">Call : <a href="tel:0790536663" style={{ color: '#ffffff' }}>079 053 6663</a></p>
@@ -49,7 +49,7 @@ const LocationList = () => {
                 <img src={direction} alt="Get direction to Centurion penta" className="get-directions-image" />
                 </a>
             </div>
-            <div className="card directions-card card-body col-4 bg-transparent">
+            <div className="card directions-card card-body col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 bg-transparent">
                 <h3 className="branch-name">Klerksdorp</h3>
                 <p className="branch-address">70 Buffelsfoorn Rd, Wilkoppies, Klerksdorp, 2571</p>
                 <p className="branch-number">Call : <a href="tel:0836283195" style={{ color: '#ffffff' }}>083 628 3195</a></p>
@@ -58,7 +58,7 @@ const LocationList = () => {
                 <img src={direction} alt="Get direction to Centurion penta" className="get-directions-image" />
                 </a>
             </div>
-            <div className="card directions-card card-body col-4 bg-transparent">
+            <div className="card directions-card card-body col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 bg-transparent">
                 <h3 className="branch-name">Lynnwood</h3>
                 <p className="branch-address">Cnr Simon Vermooten, Lynnwood Rd, Lynnwood, Pretoria, 0081</p>
                 <p className="branch-number">Call : <a href="tel:0834885391" style={{ color: '#ffffff' }}>083 488 5391</a></p>

@@ -42,11 +42,11 @@ const PentaBenefits = () => {
 
         <div className=" row approved-benefits">
           <div className="row list-benefits">
-            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 text-center benefit-item">
-              <div class="card penta-card border-0 shadow">
-                <div class="card-body">
-                  <h3 class="benefit-item-heading">Peace of Mind</h3>
-                  <p class="benefit-item-p">
+            <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 text-center benefit-item">
+              <div className="card penta-card border-0 shadow">
+                <div className="card-body">
+                  <h3 className="benefit-item-heading">Peace of Mind</h3>
+                  <p className="benefit-item-p">
                     Every Penta Now Approved vehicle comes with a 1-year or
                     20,000km maintenance warranty, ensuring you're covered for
                     unexpected repairs.
@@ -54,21 +54,21 @@ const PentaBenefits = () => {
                 </div>
               </div>
             </div>
-            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 text-center benefit-item">
-              <div class="card border-0 shadow">
-                <div class="card-body">
-                  <h3 class="benefit-item-heading">Hassle-Free Ownership</h3>
-                  <p class="benefit-item-p">
+            <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 text-center benefit-item">
+              <div className="card border-0 shadow">
+                <div className="card-body">
+                  <h3 className="benefit-item-heading">Hassle-Free Ownership</h3>
+                  <p className="benefit-item-p">
                   We select only the best pre-owned vehicles for our program, so you can be sure you're getting a reliable and well-maintained car.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 text-center pe-0 benefit-item">
-              <div class="card border-0 shadow">
-                <div class="card-body">
-                  <h3 class="benefit-item-heading">Cream of the Crop</h3>
-                  <p class="benefit-item-p">
+            <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 text-center pe-0 benefit-item">
+              <div className="card border-0 shadow">
+                <div className="card-body">
+                  <h3 className="benefit-item-heading">Cream of the Crop</h3>
+                  <p className="benefit-item-p">
                   Explore hassle-free Vehicle Financing - Our experts are ready to tailor the perfect financing plan to drive your dreams forward.
                   </p>
                 </div>

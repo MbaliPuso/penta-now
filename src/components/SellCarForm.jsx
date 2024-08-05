@@ -118,14 +118,14 @@ const SellCarForm = () => {
                             className="input-wrapper"
                             style={{ marginRight: 15 }}
                           >
-                            <label className="label" htmlFor="account2">
+                            <label className="sell-form-label" htmlFor="account2">
                               Vehicle Make
                             </label>
                             <div className="exchange-group small">
                               <div className="input-col">
                                 <input
                                   type="textarea"
-                                  className="form-control form-control-lg pe-0"
+                                  className="form-control form-control-lg pe-0 sell-form-input"
                                   id="make"
                                   placeholder="eg. Suzuki"
                                 />
@@ -133,14 +133,14 @@ const SellCarForm = () => {
                             </div>
                           </div>
                           <div className="input-wrapper">
-                            <label className="label" htmlFor="account2">
+                            <label className="sell-form-label" htmlFor="account2">
                               Vehicle Model
                             </label>
                             <div className="exchange-group small">
                               <div className="input-col">
                                 <input
                                   type="textarea"
-                                  className="form-control form-control-lg pe-0"
+                                  className="form-control form-control-lg pe-0 sell-form-input"
                                   id="model"
                                   placeholder="eg. Swift"
                                 />
@@ -154,13 +154,13 @@ const SellCarForm = () => {
                             style={{ display: "flex", gap: 20 }}
                           >
                             <div className="input-wrapper">
-                              <label className="label" htmlFor="account2">
+                              <label className="sell-form-label" htmlFor="account2">
                                 Select Year
                               </label>
                               <div className="exchange-group small">
                                 <div className="input-col">
                                   <select
-                                    id="Year"
+                                    id="year"
                                     className="form-select form-select-lg currency"
                                   >
                                     <option value={2024} selected>
@@ -195,7 +195,7 @@ const SellCarForm = () => {
                               </div>
                             </div>
                             <div className="input-wrapper">
-                              <label className="label" htmlFor="account2">
+                              <label className="sell-form-label" htmlFor="account2">
                                 Select Fuel
                               </label>
                               <div className="exchange-group small">
@@ -213,7 +213,7 @@ const SellCarForm = () => {
                               </div>
                             </div>
                             <div className="input-wrapper">
-                              <label className="label" htmlFor="account2">
+                              <label className="sell-form-label" htmlFor="account2">
                                 Transmission
                               </label>
                               <div className="exchange-group small">
@@ -234,7 +234,7 @@ const SellCarForm = () => {
                         </center>
                         <div className="form-group basic">
                           <div className="input-wrapper">
-                            <label className="label" htmlFor="account2">
+                            <label className="sell-form-label" htmlFor="account2">
                               Vehicle Condition
                             </label>
                             <br />
@@ -325,14 +325,14 @@ const SellCarForm = () => {
                         <br />
                         <div className="form-group basic">
                           <div className="input-wrapper">
-                            <label className="label" htmlFor="account2">
+                            <label className="sell-form-label" htmlFor="account2">
                               Your Name &amp; Surname
                             </label>
                             <div className="exchange-group small">
                               <div className="input-col">
                                 <input
                                   type="textarea"
-                                  className="form-control form-control-lg pe-0"
+                                  className="form-control form-control-lg pe-0 sell-form-input"
                                   id="fullName"
                                   placeholder="Enter Your Name & Surname"
                                 />
@@ -342,12 +342,12 @@ const SellCarForm = () => {
                         </div>
                         <div className="form-group basic mb-2">
                           <div className="input-wrapper">
-                            <label className="label" htmlFor="account2">
+                            <label className="sell-form-label" htmlFor="account2">
                               Your Cell Number
                             </label>
                             <input
                               type="mobile"
-                              className="form-control form-control-lg pe-0"
+                              className="form-control form-control-lg pe-0 sell-form-input"
                               id="mobile"
                               placeholder="Enter Your Cell Number"
                               required
@@ -356,12 +356,12 @@ const SellCarForm = () => {
                         </div>
                         <div className="form-group basic mb-3">
                           <div className="input-wrapper">
-                            <label className="label" htmlFor="account2">
+                            <label className="sell-form-label" htmlFor="account2">
                               Your Email Address
                             </label>
                             <input
                               type="textarea"
-                              className="form-control form-control-lg pe-0"
+                              className="form-control form-control-lg pe-0 sell-form-input"
                               id="email"
                               placeholder="Enter Your Email Address"
                               required

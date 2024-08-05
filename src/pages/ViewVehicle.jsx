@@ -20,27 +20,27 @@ const ViewVehicle = () => {
                 <VehicleSpecs />
             </div>
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 text-section">
-                <h4>{car.make} - {car.model}</h4>
-                <div className="row">
-                    <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3">
+                <h4 className="make-model">{car.make} - {car.model}</h4>
+                <div className="vehicles-info">
+                    <div className="info-icon">
                         <span>
                         <ion-icon name="speedometer-outline" role="img" className="md hydrated" aria-label="speedometer outline"></ion-icon>
                         </span>
                         {car.mileage} KM
                     </div>
-                    <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3">
+                    <div className="info-icon">
                         <span>
                         <ion-icon name="cog-outline" role="img" className="md hydrated" aria-label="cog outline"></ion-icon>
                         </span>
                         {car.transmission}
                     </div>
-                    <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3">
+                    <div className="info-icon">
                         <span>
                         <ion-icon name="car-outline" role="img" className="md hydrated" aria-label="car outline"></ion-icon>
                         </span>
                         {car.fuel}
                     </div>
-                    <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3">
+                    <div className="info-icon">
                         <span>
                         <ion-icon name="location-outline" role="img" className="md hydrated" aria-label="location outline"></ion-icon>
                         </span>

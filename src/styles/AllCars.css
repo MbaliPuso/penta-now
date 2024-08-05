@@ -27,9 +27,28 @@
     color: #495057;
 }
 
-#minYear::placeholder {
+#maxYear::placeholder {
     font-size: 16px;
     color: #495057;
+}
+
+.filter {
+    height: auto;
+    border: none;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.filter:hover {
+    height: auto;
+    border: none;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+.filter:focus {
+    height: auto;
+    border-color: #54A5FF;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
 .horizontal-line {

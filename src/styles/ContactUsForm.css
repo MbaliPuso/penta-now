@@ -2,11 +2,6 @@
     .best-deals-heading {
         padding: 0px 20px;
     }
-    
-    /* .container {
-        padding-right: 0;
-        padding-left: 0%;
-    } */
 }
 
 .contact-form {
@@ -20,6 +15,26 @@
     border: 1px solid #DDE4F7;
     border-radius: 15px;
     padding: 8px;
+}
+
+.contact-us-input {
+    background-color: #e9e7e782 !important;
+    border: none;
+    border-bottom: 1px solid #DCDCE9;
+    padding: 0 10px;
+    border-radius: 0;
+    height: 40px;
+}
+
+.contact-us-input:hover {
+    border: none;
+    border-bottom: 1px solid #DCDCE9;
+}
+
+.contact-us-input:focus {
+    border: none;
+    border-bottom: 2px solid #0079ff;
+    box-shadow: inset 0 -1px 0 0 #0079ff;
 }
 
 .fill-in-details {

@@ -1,3 +1,21 @@
+.make-model {
+    color: #222222;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.vehicles-info {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+}
+
+.info-icon {
+    font-size: 14px;
+    font-weight: 400;
+}
+
 .view-vehicle-row {
     margin-top: 100px;
 }
@@ -15,4 +33,31 @@
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     padding: 8px;
+}
+
+.view-form-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #27173E;
+    line-height: 1.2em;
+}
+
+.view-form-input {
+    background-color: #e9e7e782 !important;
+    border: none;
+    border-bottom: 1px solid #DCDCE9;
+    padding: 0 10px;
+    border-radius: 0;
+    height: 40px;
+}
+
+.view-form-input:hover {
+    border: none;
+    border-bottom: 1px solid #DCDCE9;
+}
+
+.view-form-input:focus {
+    border: none;
+    border-bottom: 2px solid #0079ff;
+    box-shadow: inset 0 -1px 0 0 #0079ff;
 }

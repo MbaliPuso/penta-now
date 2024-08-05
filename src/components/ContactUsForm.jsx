@@ -11,10 +11,10 @@ const ContactUsForm = () => {
           <div className="row mb-3 name-surname">
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
               <div class="form-group">
-                <label htmlFor="firstName">Your Name</label>
+                <label htmlFor="firstName" className="sell-form-label">Your Name</label>
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control contact-us-input"
                   id="firstName"
                   placeholder="Enter Your Name"
                 />
@@ -22,10 +22,10 @@ const ContactUsForm = () => {
             </div>
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
               <div class="form-group">
-                <label htmlFor="lastName">Your Surname</label>
+                <label htmlFor="lastName" className="sell-form-label">Your Surname</label>
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control contact-us-input"
                   id="lastName"
                   placeholder="Enter Your Surname"
                 />
@@ -33,34 +33,25 @@ const ContactUsForm = () => {
             </div>
           </div>
           <div class="form-group col-12 mb-3">
-            <label htmlFor="cellNumber">Your Cell Number</label>
+            <label htmlFor="cellNumber" className="sell-form-label">Your Cell Number</label>
             <input
               type="number"
-              class="form-control"
+              className="form-control contact-us-input"
               id="phoneNumber"
               placeholder="Enter Your Cell Number"
             />
           </div>
           <div class="form-group col-12 mb-3">
-            <label htmlFor="emailAddress">Your Email Address</label>
+            <label htmlFor="emailAddress" className="sell-form-label">Your Email Address</label>
             <input
               type="email"
-              class="form-control"
+              className="form-control contact-us-input"
               id="emailAddress"
               placeholder="Enter Your Email Address"
             />
           </div>
           <div class="form-group col-12 mb-3">
-            <label htmlFor="enquiry">Enquiry</label>
-            <input
-              type="text"
-              class="form-control"
-              id="enquiry"
-              placeholder="Enquiry details..."
-            />
-          </div>
-          <div class="form-group col-12 mb-3">
-            <label htmlFor="branch">Please select branch</label>
+            <label htmlFor="branch" className="sell-form-label">Please select branch</label>
             <select
               id="branchFilter"
               className="filter-branch filter form-control"
@@ -74,10 +65,10 @@ const ContactUsForm = () => {
             </select>
           </div>
           <div class="form-group col-12 mb-3">
-            <label htmlFor="enquiry">Enquiry</label>
+            <label htmlFor="enquiry" className="sell-form-label">Enquiry</label>
             <input
               type="text"
-              class="form-control"
+              className="form-control contact-us-input"
               id="enquiry"
               placeholder="Enquiry details..."
             />

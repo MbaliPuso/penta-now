@@ -9,8 +9,7 @@ const Footer = () => {
             <div className="col-lg-3">
               <h2 className="footer-heading mb-4">About Us</h2>
               <p>
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts.{" "}
+              Your Premier Destination For Premium Used Vehicles : Pre-Loved For You To Re-Love.{" "}
               </p>
               <ul className="list-unstyled social">
                 <li>
