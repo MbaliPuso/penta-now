@@ -38,10 +38,11 @@ const PentaBenefits = () => {
           </div>
         </div>
 
+        <p className="benefits-heading text-center mt-4">Benefits of Penta Now Approved</p>
+
         <div className=" row approved-benefits">
-          <p className="benefits-heading">Benefits of Penta Now Approved</p>
           <div className="row list-benefits">
-            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 text-center benefit-item pe-0">
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 text-center benefit-item">
               <div class="card penta-card border-0 shadow">
                 <div class="card-body">
                   <h3 class="benefit-item-heading">Peace of Mind</h3>
@@ -53,7 +54,7 @@ const PentaBenefits = () => {
                 </div>
               </div>
             </div>
-            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 text-center benefit-item">
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 text-center benefit-item">
               <div class="card border-0 shadow">
                 <div class="card-body">
                   <h3 class="benefit-item-heading">Hassle-Free Ownership</h3>
@@ -63,7 +64,7 @@ const PentaBenefits = () => {
                 </div>
               </div>
             </div>
-            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 text-center pe-0 benefit-item">
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 text-center pe-0 benefit-item">
               <div class="card border-0 shadow">
                 <div class="card-body">
                   <h3 class="benefit-item-heading">Cream of the Crop</h3>

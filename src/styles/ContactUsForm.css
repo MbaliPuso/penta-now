@@ -1,8 +1,19 @@
+@media (max-width: 576px) {
+    .best-deals-heading {
+        padding: 0px 20px;
+    }
+    
+    /* .container {
+        padding-right: 0;
+        padding-left: 0%;
+    } */
+}
+
 .contact-form {
     max-width: 85%;
     display: block;
     margin: auto;
-    padding-top: 120px;
+    padding-top: 150px;
 }
 
 .contact-us-form {

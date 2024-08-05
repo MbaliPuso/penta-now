@@ -17,7 +17,7 @@ const SellCarForm = () => {
                 style={{ color: "#2a74e7 !important" }}
               />
               <h2
-                className="fs-3 mb-0"
+                className="fs-3 mb-0 best-deals-heading"
                 style={{
                   color: "#2a74e7",
                   fontWeight: 700,

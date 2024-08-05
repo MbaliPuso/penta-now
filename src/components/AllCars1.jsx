@@ -156,7 +156,7 @@ const AllCars = () => {
     <>
       <div id="appCapsule" className="extra-header-active full-height">
         <div className="section tab-content mb-1" style={{ marginTop: 120 }}>
-          <div className="container">
+          <div className="container filter-row">
             <div
               className="row"
               id="filter"
@@ -423,7 +423,7 @@ const AllCars = () => {
                 {cars.map((car, index) => (
                   <div
                     key={index}
-                    className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 mb-4 car"
+                    className="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 mb-4 car"
                   >
                     <div className="card vehicle-card" onClick={() => viewVehicle(car)}>
                       <img
@@ -431,7 +431,7 @@ const AllCars = () => {
                         alt={car.name}
                         className="car-image"
                         height={152}
-                        // width={203}
+                        width={203}
                       />
                       <div className="vehicle-details">
                         <div style={{ color: '#123594' }}>
