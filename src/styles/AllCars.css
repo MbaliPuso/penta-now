@@ -32,6 +32,14 @@
     color: #495057;
 }
 
+.left-input {
+    padding-right: 1px;
+}
+
+.right-input {
+    padding-left: 1px;
+}
+
 .filter {
     height: auto;
     border: none;

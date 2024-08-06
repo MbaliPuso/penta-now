@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useMemo } from "react";
 import "../styles/AllCars.css";
 import { useNavigate } from "react-router-dom";
-//import { Link } from "react-router-dom";
 import carOne from "../assets/Mercedes-Benz-B-class.jpg";
 import carTwo from "../assets/chevrolet-utility.jpg";
 import carThree from "../assets/nissan-qashqai.jpg";
@@ -237,37 +236,23 @@ const AllCars = () => {
 
   return (
     <>
-      <div id="appCapsule" className="extra-header-active full-height">
-        <div className="section tab-content mb-1" style={{ marginTop: 120 }}>
+      <div className="section" style={{ marginTop: 120 }}>
         <button
-          className="d-md-none d-block m-auto w-75"
+          className="d-md-none d-block m-auto"
           onClick={() => setShowFilters(!showFilters)}
         >
           {showFilters ? "Hide Filters" : "Show Filters"}
         </button>
-          <div className={showFilters ? "d-block" : "d-none d-md-block"}>
-            <div
-              className="row"
-              id="filter"
-              style={{ padding: "0px !important", marginTop: 10 }}
-            ></div>
-            <div
-              className="row"
-              id="filter"
-              style={{ padding: "0px !important", marginTop: 10 }}
-            >
-              <div className="col-md-12 col-sm-3">
-                <form
-                  id="select-form"
-                  method="POST"
-                  encType="multipart/form-data"
-                  style={{ display: "flex" }}
-                >
-                  <div className="col-12 col-md-3">
+        <div className={showFilters ? "d-block" : "d-none d-md-block"}>
+          <div className="row justify-content-center">
+            <div className="col-10">
+              <form className="trip-form">
+                <div className="row align-items-center">
+                  <div className="mb-md-0 col-md-3">
                     <select
                       id="makeFilter"
                       data-filter="make"
-                      className="filter-make filter form-control"
+                      className="custom-select filter"
                       value={makeFilter}
                       onChange={(e) => setMakeFilter(e.target.value)}
                     >
@@ -293,20 +278,17 @@ const AllCars = () => {
                       <option>Volkswagen</option>
                     </select>
                   </div>
-                  <div
-                    className="col-12 col-md-3"
-                    style={{ marginRight: 6, marginLeft: 6 }}
-                  >
+                  <div className="col-md-3">
                     <select
                       id="modelFilter"
                       data-filter="model"
-                      className="filter-model filter form-control"
+                      className="custom-select filter"
                       value={modelFilter}
                       onChange={(e) => setModelFilter(e.target.value)}
                       disabled={!makeFilter}
                     >
                       <option value="">Model</option>
-                      
+
                       {cars
                         .filter((car) => car.make === makeFilter)
                         .map((car, index) => (
@@ -316,11 +298,11 @@ const AllCars = () => {
                         ))}
                     </select>
                   </div>
-                  <div className="col-12 col-md-3">
+                  <div className="col-md-3">
                     <select
                       id="mileageFilter"
                       data-filter="mileage"
-                      className="filter-mileage filter form-control"
+                      className="custom-select filter"
                       value={mileageFilter}
                       onChange={(e) => setMileageFilter(e.target.value)}
                     >
@@ -331,10 +313,10 @@ const AllCars = () => {
                       <option value="200000">200000 KM</option>
                     </select>
                   </div>
-                  <div className="col-12 col-md-3">
+                  <div className="col-md-3">
                     <select
                       id="branchFilter"
-                      className="filter-branch filter form-control"
+                      className="custom-select filter"
                       value={branchFilter}
                       onChange={(e) => setBranchFilter(e.target.value)}
                     >
@@ -347,26 +329,13 @@ const AllCars = () => {
                       <option value="Mokopane">Mokopane</option>
                     </select>
                   </div>
-                </form>
-              </div>
-            </div>
-            <div
-              className="row"
-              id="filter"
-              style={{ padding: "0px !important", marginTop: 10 }}
-            >
-              <div className="col-md-12">
-                <form
-                  id="select-form"
-                  method="POST"
-                  encType="multipart/form-data"
-                  style={{ display: "flex" }}
-                >
-                  <div className="col-12 col-md-3">
+                </div>
+                <div className="row align-items-center mt-4">
+                  <div className="col-md-3">
                     <select
                       id="fuelFilter"
                       data-filter="fuel"
-                      className="filter-fuel filter form-control"
+                      className="custom-select filter"
                       value={fuelFilter}
                       onChange={(e) => setFuelFilter(e.target.value)}
                     >
@@ -375,14 +344,11 @@ const AllCars = () => {
                       <option>Diesel</option>
                     </select>
                   </div>
-                  <div
-                    className="col-12 col-md-3"
-                    style={{ marginRight: 6, marginLeft: 6 }}
-                  >
+                  <div className="col-md-3">
                     <select
                       id="transmissionFilter"
                       data-filter="transmission"
-                      className="filter-transmission filter form-control"
+                      className="custom-select filter"
                       value={transmissionFilter}
                       onChange={(e) => setTransmissionFilter(e.target.value)}
                     >
@@ -392,78 +358,76 @@ const AllCars = () => {
                       <option>CVT</option>
                     </select>
                   </div>
-                  <div
-                    className="row"
-                    style={{ marginLeft: "15px", marginRight: "13px" }}
-                  >
-                    <div className="col-6 col-md-6 px-0">
-                      <div className="exchange-group small">
-                        <div className="input-col">
-                          <input
-                            type="number"
-                            className="form-control filter pe-0 price-range"
-                            id="minPrice"
-                            placeholder="Min Price"
-                            value={minPrice}
-                            onChange={(e) => setMinPrice(e.target.value)}
-                          />
+                  <div className="col-md-3">
+                    <div className="row">
+                      <div className="col-sm-6 col-md-6 left-input">
+                        <div className="exchange-group small">
+                          <div className="input-col">
+                            <input
+                              type="number"
+                              className="custom-select filter"
+                              id="minPrice"
+                              placeholder="Min Price"
+                              value={minPrice}
+                              onChange={(e) => setMinPrice(e.target.value)}
+                            />
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div className="col-6 col-md-6 px-0">
-                      <div className="exchange-group small">
-                        <div className="input-col">
-                          <input
-                            type="number"
-                            className="form-control filter pe-0"
-                            id="maxPrice"
-                            placeholder="Max Price"
-                            value={maxPrice}
-                            onChange={(e) => setMaxPrice(e.target.value)}
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className="row"
-                    style={{ marginLeft: "15px", marginRight: "3px" }}
-                  >
-                    <div className="col-6 col-md-6 px-0">
-                      <div className="exchange-group small">
-                        <div className="input-col">
-                          <input
-                            type="number"
-                            className="form-control filter pe-0 price-range"
-                            id="minYear"
-                            placeholder="Min Year"
-                            value={minYear}
-                            onChange={(e) => setMinYear(e.target.value)}
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-6 col-md-6 px-0">
-                      <div className="exchange-group small">
-                        <div className="input-col">
-                          <input
-                            type="number"
-                            className="form-control filter pe-0"
-                            id="maxYear"
-                            placeholder="Max Year"
-                            value={maxYear}
-                            onChange={(e) => setMaxYear(e.target.value)}
-                          />
+                      <div className="col-sm-6 col-md-6 right-input">
+                        <div className="exchange-group small">
+                          <div className="input-col">
+                            <input
+                              type="number"
+                              className="custom-select filter"
+                              id="maxPrice"
+                              placeholder="Max Price"
+                              value={maxPrice}
+                              onChange={(e) => setMaxPrice(e.target.value)}
+                            />
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </form>
-              </div>
+                  <div className="col-md-3">
+                    <div className="row">
+                      <div className="col-sm-6 col-md-6 left-input">
+                        <div className="exchange-group small">
+                          <div className="input-col">
+                            <input
+                              type="number"
+                              className="custom-select filter"
+                              id="minYear"
+                              placeholder="Min Year"
+                              value={minYear}
+                              onChange={(e) => setMinYear(e.target.value)}
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-sm-6 col-md-6 right-input">
+                        <div className="exchange-group small">
+                          <div className="input-col">
+                            <input
+                              type="number"
+                              className="custom-select filter"
+                              id="maxYear"
+                              placeholder="Max Year"
+                              value={maxYear}
+                              onChange={(e) => setMaxYear(e.target.value)}
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
-
-          <div className="container mt-5">
+        </div>
+        <div className="container mt-5">
             <div className="row">
               {filteredCars.map((car, index) => (
                 <div
@@ -539,7 +503,6 @@ const AllCars = () => {
               )}
             </div>
           </div>
-        </div>
       </div>
     </>
   );

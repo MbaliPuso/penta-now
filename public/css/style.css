@@ -436,7 +436,7 @@ h1, h2, h3, h4, h5,
   @media (max-width: 991.98px) {
     .site-navbar {
       padding-top: 3rem;
-      padding-bottom: 3rem;
+      /* padding-bottom: 3rem; */
       padding-left: 0;
       padding-right: 0; } }
   .site-navbar .toggle-button {

@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
-import AllCars from "../components/AllCars1";
+import AllCars from "../components/AllCars";
 import Footer from "../components/Footer";
 
 const BuyCar = () => {
