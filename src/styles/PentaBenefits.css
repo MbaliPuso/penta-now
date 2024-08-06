@@ -69,7 +69,13 @@
 }
 
 .approved-benefits {
-    margin-left: 15px;
+    margin: 0 15px;
+}
+
+@media (max-width: 576px) {
+    .approved-benefits {
+        margin: 8px;
+    }
 }
 
 .benefits-heading {
@@ -95,6 +101,12 @@
 .penta-card {
     border-radius: 25px;
     border: none;
+}
+
+@media (max-width: 576px) {
+    .benefit-item {
+        margin-bottom: 10px;
+    }
 }
 
 .benefit-item-heading {

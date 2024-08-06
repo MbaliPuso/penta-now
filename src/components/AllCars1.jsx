@@ -198,6 +198,7 @@ const AllCars = () => {
   const [minYear, setMinYear] = useState("");
   const [maxYear, setMaxYear] = useState("");
   const [filteredCars, setFilteredCars] = useState([]);
+  const [showFilters, setShowFilters] = useState(false);
 
   const viewVehicle = (car) => {
     navigate("/view-vehicle", { state: { car } });
@@ -238,7 +239,13 @@ const AllCars = () => {
     <>
       <div id="appCapsule" className="extra-header-active full-height">
         <div className="section tab-content mb-1" style={{ marginTop: 120 }}>
-          <div className="container filter-row">
+        <button
+          className="d-md-none d-block m-auto w-75"
+          onClick={() => setShowFilters(!showFilters)}
+        >
+          {showFilters ? "Hide Filters" : "Show Filters"}
+        </button>
+          <div className={showFilters ? "d-block" : "d-none d-md-block"}>
             <div
               className="row"
               id="filter"
@@ -249,14 +256,14 @@ const AllCars = () => {
               id="filter"
               style={{ padding: "0px !important", marginTop: 10 }}
             >
-              <div className="col-md-12">
+              <div className="col-md-12 col-sm-3">
                 <form
                   id="select-form"
                   method="POST"
                   encType="multipart/form-data"
                   style={{ display: "flex" }}
                 >
-                  <div className="col-md-3">
+                  <div className="col-12 col-md-3">
                     <select
                       id="makeFilter"
                       data-filter="make"
@@ -287,7 +294,7 @@ const AllCars = () => {
                     </select>
                   </div>
                   <div
-                    className="col-md-3"
+                    className="col-12 col-md-3"
                     style={{ marginRight: 6, marginLeft: 6 }}
                   >
                     <select
@@ -309,7 +316,7 @@ const AllCars = () => {
                         ))}
                     </select>
                   </div>
-                  <div className="col-md-3">
+                  <div className="col-12 col-md-3">
                     <select
                       id="mileageFilter"
                       data-filter="mileage"
@@ -324,7 +331,7 @@ const AllCars = () => {
                       <option value="200000">200000 KM</option>
                     </select>
                   </div>
-                  <div className="col-md-3">
+                  <div className="col-12 col-md-3">
                     <select
                       id="branchFilter"
                       className="filter-branch filter form-control"
@@ -355,7 +362,7 @@ const AllCars = () => {
                   encType="multipart/form-data"
                   style={{ display: "flex" }}
                 >
-                  <div className="col-md-3">
+                  <div className="col-12 col-md-3">
                     <select
                       id="fuelFilter"
                       data-filter="fuel"
@@ -369,7 +376,7 @@ const AllCars = () => {
                     </select>
                   </div>
                   <div
-                    className="col-md-3"
+                    className="col-12 col-md-3"
                     style={{ marginRight: 6, marginLeft: 6 }}
                   >
                     <select
@@ -389,7 +396,7 @@ const AllCars = () => {
                     className="row"
                     style={{ marginLeft: "15px", marginRight: "13px" }}
                   >
-                    <div className="col-md-6 px-0">
+                    <div className="col-6 col-md-6 px-0">
                       <div className="exchange-group small">
                         <div className="input-col">
                           <input
@@ -403,7 +410,7 @@ const AllCars = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="col-md-6 px-0">
+                    <div className="col-6 col-md-6 px-0">
                       <div className="exchange-group small">
                         <div className="input-col">
                           <input
@@ -422,7 +429,7 @@ const AllCars = () => {
                     className="row"
                     style={{ marginLeft: "15px", marginRight: "3px" }}
                   >
-                    <div className="col-md-6 px-0">
+                    <div className="col-6 col-md-6 px-0">
                       <div className="exchange-group small">
                         <div className="input-col">
                           <input
@@ -436,7 +443,7 @@ const AllCars = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="col-md-6 px-0">
+                    <div className="col-6 col-md-6 px-0">
                       <div className="exchange-group small">
                         <div className="input-col">
                           <input

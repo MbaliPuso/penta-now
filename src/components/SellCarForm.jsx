@@ -1,5 +1,6 @@
 import React from "react";
 import favicon from "../assets/favicon.png";
+import circleCheck from "../assets/check-circle.png"; 
 import "../styles/SellCarForm.css";
 
 const SellCarForm = () => {
@@ -29,10 +30,15 @@ const SellCarForm = () => {
               {/* Item 1 */}
               <div className="card sell-item-list" style={{ marginTop: 30 }}>
                 <div className="row item align-items-center">
-                  <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 text-center rounded-circle icon">
-                    <ion-icon className='rounded-circle' name="checkmark-circle-outline" />
+                  <div className="col-2">
+                  <img
+                          src={circleCheck}
+                          alt="penta now icon"
+                          className="imaged rounded w-36"
+                          style={{ width: "36px" }}
+                        />
                   </div>
-                  <div className="col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-10 in">
+                  <div className="col-10 in">
                     <div style={{ color: 'black' }}>
                       <strong style={{ fontSize: '18px', lineHeight: '1.5em', fontWeight: 600 }}>How It Works</strong>
                       <div style={{ fontSize: '11px', lineHeight: '16px', fontWeight: '400' }}>
@@ -373,7 +379,7 @@ const SellCarForm = () => {
                             type="button"
                             id="submitlead"
                             className="btn btn-primary btn-lg btn-block rounded-3"
-                            onclick="cario()"
+                            
                           >
                             Send Vehicle Details
                           </button>

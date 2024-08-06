@@ -72,6 +72,12 @@
     font-weight: 700;
 }
 
+@media (max-width: 576px) {
+    .form-select-lg {
+        padding: 8px;
+    }
+}
+
 .form-select-lg:focus {
     border-color: #8ba1dc;
 }
@@ -83,6 +89,12 @@
     padding: 15px;
     margin-left: 12px;
     width: 100%;
+}
+
+@media (max-width: 576px) {
+    .item {
+        margin: auto;
+    }
 }
 
 .icon {
