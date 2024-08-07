@@ -1,12 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/AllCars.css";
-import '../styles/HomeCars.css';
+import "../styles/HomeCars.css";
 import carOne from "../assets/Mercedes-Benz-B-class.jpg";
 import carTwo from "../assets/chevrolet-utility.jpg";
 import carThree from "../assets/nissan-qashqai.jpg";
 import carFour from "../assets/Honda_Jazz.jpg";
 
 const HomeCars = () => {
+  const navigate = useNavigate();
   const homeCars = [
     {
       image: carOne,
@@ -77,6 +79,11 @@ const HomeCars = () => {
       serviceHistory: "yes",
     },
   ];
+
+  const viewVehicle = (car) => {
+    navigate("/view-vehicle", { state: { car } });
+  };
+
   return (
     <>
       <div className="container mt-5">
@@ -142,7 +149,12 @@ const HomeCars = () => {
                       <strong>R {car.price}</strong>
                     </div>
                   </div>
-                  <button className="view-details-button">View Details</button>
+                  <button
+                    onClick={() => viewVehicle(car)}
+                    className="view-details-button"
+                  >
+                    View Details
+                  </button>
                   <div className="branch">{car.branch}</div>
                 </div>
               </div>
