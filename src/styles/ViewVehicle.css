@@ -5,6 +5,16 @@
     line-height: 1.2;
 }
 
+@media (max-width: 576px) {
+    .make-model, .vehicles-info, .view-vehicle-price {
+        padding-left: 10px;
+    }
+
+    .contact-view-form {
+        margin: auto;
+    }
+}
+
 .vehicles-info {
     display: flex;
     justify-content: space-between;
