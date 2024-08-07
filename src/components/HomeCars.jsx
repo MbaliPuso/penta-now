@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/AllCars.css";
 import "../styles/HomeCars.css";
@@ -9,6 +9,7 @@ import carFour from "../assets/Honda_Jazz.jpg";
 
 const HomeCars = () => {
   const navigate = useNavigate();
+  
   const homeCars = [
     {
       image: carOne,
@@ -80,6 +81,9 @@ const HomeCars = () => {
     },
   ];
 
+  const [viewMode, setViewMode] = useState("grid");
+  const [sortCriteria, setSortCriteria] = useState("");
+
   const viewVehicle = (car) => {
     navigate("/view-vehicle", { state: { car } });
   };
@@ -95,6 +99,38 @@ const HomeCars = () => {
           <div className="small-home-heading">Welcome To Penta Now</div>
           <h2 className="featured-vehicles-heading">Featured Vehicles</h2>
         </div>
+        {/* sort container start */}
+        <div className="d-flex justify-content-between align-items-center mb-4">
+            <div className="d-block m-auto">
+              <button
+                className={`view-mode-button ${viewMode === "grid" ? "active" : ""}`}
+                onClick={() => setViewMode("grid")}
+              >
+                <span className="mode-icon"><i className="bi bi-grid"></i></span> <span className="view-text">Grid View</span>
+              </button>
+              <button
+                className={`view-mode-button ${viewMode === "list" ? "active" : ""}`}
+                onClick={() => setViewMode("list")}
+              >
+                <span className="mode-icon"><i className="bi bi-list"></i></span> <span className="view-text">List View</span>
+              </button>
+            </div>
+            <div className="sort-container d-flex align-items-center">
+              <span className="view-text" style={{ paddingRight: '20px' }}>Sort By:</span>
+              <select
+                value={sortCriteria}
+                onChange={(e) => setSortCriteria(e.target.value)}
+                className="sort-input"
+              >
+                <option value="year">Year : Newest</option>
+                <option value="lowestPrice">Price : Lowest</option>
+                <option value="highestPrice">Price : Highest</option>
+                <option value="lowestMileage">Mileage : Lowest</option>
+                <option value="highestMileage">Mileage : Highest</option>
+              </select>
+            </div>
+          </div>
+          {/* sort container end */}
         <div className="row">
           {homeCars.map((car, index) => (
             <div

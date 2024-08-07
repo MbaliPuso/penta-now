@@ -1,9 +1,8 @@
 import React from "react";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import logo from '../assets/now-banner.jpg';
 
 const Hero = () => {
+
   return (
     <>
       <div
@@ -23,7 +22,7 @@ const Hero = () => {
               <form className="trip-form">
                 <div className="row align-items-center p-0 m-0">
                   <div className="mb-3 mb-md-0 col-md-3">
-                    <select name id className="custom-select form-control">
+                    <select className="custom-select form-control" >
                       <option>Select Make</option>
                       <option>BMW</option>
                       <option>Chery</option>
@@ -48,7 +47,7 @@ const Hero = () => {
                   </div>
                   <div className="mb-3 mb-md-0 col-md-3">
                     <div className="form-control-wrap">
-                      <select name id className="custom-select form-control">
+                      <select className="custom-select form-control">
                         <option>Select Model</option>
                         <option>1 Series (e81/87)</option>
                       <option>1400/np200</option>
@@ -125,19 +124,24 @@ const Hero = () => {
                   </div>
                   <div className="mb-3 mb-md-0 col-md-3">
                     <div className="form-control-wrap">
-                      <select name id className="custom-select form-control">
-                        <option value>Select Minimum</option>
-                        <option value>Ferrari</option>
-                        <option value>Toyota</option>
-                        <option value>Ford</option>
-                        <option value>Lamborghini</option>
+                      <select className="custom-select form-control">
+                        <option value>Min Price</option>
+                        <option value>R50 000</option>
+                        <option value>R100 000</option>
+                        <option value>R150 000</option>
+                        <option value>R200 000</option>
+                        <option value>R250 000</option>
+                        <option value>R300 000</option>
+                        <option value>R350 000</option>
+                        <option value>R400 000</option>
+                        <option value>R500 000</option>
                       </select>
                     </div>
                   </div>
                   <div className="mb-3 mb-md-0 col-md-3">
                     <div className="form-control-wrap">
-                      <select name id className="custom-select form-control">
-                        <option value>Select Maximum</option>
+                      <select className="custom-select form-control">
+                        <option value>Max</option>
                         <option value>R50 000</option>
                         <option value>R100 000</option>
                         <option value>R150 000</option>
@@ -155,13 +159,6 @@ const Hero = () => {
                       </select>
                     </div>
                   </div>
-                  {/* <div className="mb-3 mb-md-0 col-md-1">
-                    <div className="form-control-wrap">
-                      <button className="btn search-btn" type="submit">
-                        <FontAwesomeIcon icon={faMagnifyingGlass} />
-                      </button>
-                    </div>
-                  </div> */}
                 </div>
               </form>
             </div>

@@ -115,3 +115,62 @@
     padding: 5px 10px;
     font-size: 13px;
 }
+
+/* list view css */
+.view-mode-button {
+    background-color: transparent;
+}
+
+.mode-icon {
+    color: #2a74e7;
+    font-size: 22px;
+}
+
+.view-text {
+    color: #222222;
+}
+
+.sort-input {
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.list-car-item {
+    align-items: center;
+    margin-top: 20px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.car-list-image {
+    border-radius: 18px;
+}
+
+.list-car-title {
+    color: #222222;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.2;
+    padding: 8px 0;
+}
+
+.list-mileage, .list-transmission, .list-year, .list-location {
+    font-size: 16px;
+    font-weight: 200;
+    padding-bottom: 8px;
+}
+
+.view-list-button {
+    padding: 5px 10px;
+    font-size: 13px;
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+.list-price {
+    font-size: 30px;
+    color: #2a74e7;
+    margin: 10px 0;
+    font-weight: 500;
+}

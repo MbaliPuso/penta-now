@@ -6,6 +6,7 @@ import carTwo from "../assets/chevrolet-utility.jpg";
 import carThree from "../assets/nissan-qashqai.jpg";
 import carFour from "../assets/Honda_Jazz.jpg";
 import carFive from "../assets/datsun-go.jpg";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 const AllCars = () => {
   // Cars data
@@ -198,6 +199,8 @@ const AllCars = () => {
   const [maxYear, setMaxYear] = useState("");
   const [filteredCars, setFilteredCars] = useState([]);
   const [showFilters, setShowFilters] = useState(false);
+  const [viewMode, setViewMode] = useState("grid");
+  const [sortCriteria, setSortCriteria] = useState("");
 
   const viewVehicle = (car) => {
     navigate("/view-vehicle", { state: { car } });
@@ -219,6 +222,30 @@ const AllCars = () => {
         (!maxYear || car.year <= parseInt(maxYear, 10))
       );
     });
+
+    if (sortCriteria) {
+      filtered = filtered.sort((a, b) => {
+        if (sortCriteria === "year") {
+          return b.year - a.year;
+        } else if (sortCriteria === "lowestPrice") {
+          return (
+            parseInt(a.price.replace(/ /g, "")) -
+            parseInt(b.price.replace(/ /g, ""))
+          );
+        } else if (sortCriteria === "highestPrice") {
+          return (
+            parseInt(b.price.replace(/ /g, "")) -
+            parseInt(a.price.replace(/ /g, ""))
+          );
+        } else if (sortCriteria === "lowestMileage") {
+          return a.mileage - b.mileage;
+        } else if (sortCriteria === "highestMileage") {
+          return b.mileage - a.mileage;
+        }
+        return 0;
+      });
+    }
+
     setFilteredCars(filtered);
   }, [
     cars,
@@ -232,11 +259,18 @@ const AllCars = () => {
     maxPrice,
     minYear,
     maxYear,
+    sortCriteria,
   ]);
 
   return (
     <>
       <div className="section" style={{ marginTop: 120 }}>
+        <div className="all-cars-intro text-center">
+          <div className="small-home-heading">Browse for used vehicles</div>
+          <h2 className="featured-vehicles-heading">
+            Featured Vehicles to Buy From
+          </h2>
+        </div>
         <button
           className="d-md-none d-block m-auto"
           onClick={() => setShowFilters(!showFilters)}
@@ -245,7 +279,7 @@ const AllCars = () => {
         </button>
         <div className={showFilters ? "d-block" : "d-none d-md-block"}>
           <div className="row justify-content-center">
-            <div className="col-10">
+            <div className="col-xxl-10 col-xl-10 col-lg-10 col-md-10">
               <form className="trip-form">
                 <div className="row align-items-center">
                   <div className="mb-md-0 col-md-3">
@@ -427,82 +461,206 @@ const AllCars = () => {
             </div>
           </div>
         </div>
+
+        {/* listed cars */}
         <div className="container mt-5">
-            <div className="row">
-              {filteredCars.map((car, index) => (
-                <div
-                  key={index}
-                  className="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 mb-4 car"
-                >
-                  <div className="card vehicle-card">
-                    <img
-                      src={car.image}
-                      className="car-image"
-                      alt={car.make}
-                      height={152}
-                      // width={250}
-                    />
-                    <div className="vehicle-details">
-                      <div style={{ color: "#123594" }}>
-                        <h5 className="car-title">
-                          {car.make} <span> - {car.model}</span>
-                        </h5>
-                      
-                      <div className="row car-details">
-                        <div className="col-4 mileage p-0">
-                          <div>
-                            <ion-icon
-                              name="speedometer-outline"
-                              role="img"
-                              className="md hydrated"
-                              aria-label="speedometer outline"
-                            ></ion-icon>
-                          </div>
-                          {car.mileage}
-                        </div>
-                        <div className="col-4 transmission p-0">
-                          <div>
-                            <ion-icon
-                              name="car-outline"
-                              role="img"
-                              className="md hydrated"
-                              aria-label="car outline"
-                            ></ion-icon>
-                          </div>
-                          {car.transmission}
-                        </div>
-                        <div className="col-4 year p-0">
-                          <div>
-                            <ion-icon
-                              name="calendar-outline"
-                              role="img"
-                              className="md hydrated"
-                              aria-label="calendar outline"
-                            ></ion-icon>
-                          </div>
-                          {car.year}
-                        </div>
-                      </div>
-                      <div className="price"><strong>R {car.price}</strong></div>
-                      </div>
-                      <button
-                        onClick={() => viewVehicle(car)}
-                        className="view-details-button"
-                      >
-                        View Details
-                      </button>
-                      <div className="branch">{car.branch}</div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-              {filteredCars.length === 0 && (
-                <div className="col-12">
-                  <p className="text-center">No cars match your filters.</p>
-                </div>
-              )}
+          {/* sort container */}
+          <div className="d-flex justify-content-between align-items-center mb-4">
+            <div className="d-block m-auto">
+              <button
+                className={`view-mode-button ${viewMode === "grid" ? "active" : ""}`}
+                onClick={() => setViewMode("grid")}
+              >
+                <span className="mode-icon"><i className="bi bi-grid"></i></span> <span className="view-text">Grid View</span>
+              </button>
+              <button
+                className={`view-mode-button ${viewMode === "list" ? "active" : ""}`}
+                onClick={() => setViewMode("list")}
+              >
+                <span className="mode-icon"><i className="bi bi-list"></i></span> <span className="view-text">List View</span>
+              </button>
+            </div>
+            <div className="sort-container d-flex align-items-center">
+              <span className="view-text" style={{ paddingRight: '20px' }}>Sort By:</span>
+              <select
+                value={sortCriteria}
+                onChange={(e) => setSortCriteria(e.target.value)}
+                className="sort-input"
+              >
+                <option value="year">Year : Newest</option>
+                <option value="lowestPrice">Price : Lowest</option>
+                <option value="highestPrice">Price : Highest</option>
+                <option value="lowestMileage">Mileage : Lowest</option>
+                <option value="highestMileage">Mileage : Highest</option>
+              </select>
             </div>
           </div>
+          {/* sort container end */}
+          {/* view mode change */}
+          <div className={`car-list ${viewMode}`}>
+            {viewMode === "grid" ? (
+              // grid view
+              <div className="row justify-content-center">
+                {filteredCars.map((car, index) => (
+                  <div
+                    className="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 car mt-4 mb-4"
+                    key={index}
+                  >
+                    <div
+                      className="card vehicle-card"
+                      onClick={() => viewVehicle(car)}
+                    >
+                      <img
+                        src={car.image}
+                        alt={car.make}
+                        className="car-image"
+                        height={152}
+                        width={205}
+                      />
+                      <div className="vehicle-details">
+                        <div style={{ color: "#1223594" }}>
+                          <h5 className="car-title">
+                            {car.make} - {car.model}
+                          </h5>
+                          <div className="row car-details">
+                            <div className="col-4 mileage p-0">
+                              <div>
+                                <ion-icon
+                                  name="speedometer-outline"
+                                  role="img"
+                                  className="md hydrated"
+                                  aria-label="speedometer outline"
+                                ></ion-icon>
+                              </div>
+                              {car.mileage}
+                            </div>
+                            <div className="col-4 transmission p-0">
+                              <div>
+                                <ion-icon
+                                  name="car-outline"
+                                  role="img"
+                                  className="md hydrated"
+                                  aria-label="car outline"
+                                ></ion-icon>
+                              </div>
+                              {car.transmission}
+                            </div>
+                            <div className="col-4 year p-0">
+                              <div>
+                                <ion-icon
+                                  name="calendar-outline"
+                                  role="img"
+                                  className="md hydrated"
+                                  aria-label="calendar outline"
+                                ></ion-icon>
+                              </div>
+                              {car.year}
+                            </div>
+                          </div>
+                          <div className="price"><strong>R {car.price}</strong></div>
+                        </div>
+                        <button onClick={() => viewVehicle(car)} className="view-details-button">View Details</button>
+                        <div className="branch">{car.branch}</div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              // list view
+              <div className="row justify-content-center">
+                {filteredCars.map((car, index) => (
+                  <div key={index} className="col-12">
+                    <div className="card border list-car-item">
+                      <div className="row mb-4">
+                        <div
+                          className="col-md-3"
+                        >
+                          <img
+                            src={car.image}
+                            alt={car.make}
+                            className="img-fluid car-list-image"
+                          />
+                        </div>
+                        <div
+                          className="col-md-6"
+                        >
+                          <h5 className="list-car-title">
+                            {car.make} {car.model}
+                          </h5>
+                          <div className="row align-items-center">
+                            <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 list-mileage">
+                              <span>
+                                <ion-icon
+                                  name="speedometer-outline"
+                                  role="img"
+                                  className="md hydrated"
+                                  aria-label="speedometer outline"
+                                ></ion-icon>{' '}
+                              </span>
+                              {car.mileage}
+                            </div>
+                            <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 list-transmission">
+                              <span>
+                                <ion-icon
+                                  name="car-outline"
+                                  role="img"
+                                  className="md hydrated"
+                                  aria-label="car outline"
+                                ></ion-icon>{' '}
+                              </span>
+                              {car.transmission}
+                            </div>
+                            <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 list-year">
+                              <span>
+                                <ion-icon
+                                  name="calendar-outline"
+                                  role="img"
+                                  className="md hydrated"
+                                  aria-label="calendar outline"
+                                ></ion-icon>{' '}
+                              </span>
+                              {car.year}
+                            </div>
+                            <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 list-location">
+                              <span>
+                                <ion-icon
+                                  name="location-outline"
+                                  role="img"
+                                  className="md hydrated"
+                                  aria-label="location outline"
+                                ></ion-icon>{' '}
+                              </span>
+                              {car.branch}
+                            </div>
+                          </div>
+                          <button
+                            className="view-list-button mt-2"
+                            onClick={() => viewVehicle(car)}
+                          >
+                            View Details
+                          </button>
+                          
+                        </div>
+                        <div
+                          className="col-md-3 car-price"
+                        >
+                         <div className="align-items-end list-price text-center"><strong>R {car.price}</strong></div> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+                {filteredCars.length === 0 && (
+                  <div className="col-12">
+                    <p className="text-center">No cars match your filters</p>
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
+          {/* view mode change end */}
+        </div>
       </div>
     </>
   );
