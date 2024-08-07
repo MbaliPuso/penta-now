@@ -84,6 +84,10 @@ const HomeCars = () => {
     navigate("/view-vehicle", { state: { car } });
   };
 
+  const buyCar = () => {
+    navigate("/buy-a-car");
+  };
+
   return (
     <>
       <div className="container mt-5">
@@ -161,6 +165,7 @@ const HomeCars = () => {
             </div>
           ))}
         </div>
+        <button className="d-block m-auto" onClick={() => buyCar()}>View All Cars</button>
       </div>
     </>
   );
