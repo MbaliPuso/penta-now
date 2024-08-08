@@ -32,6 +32,16 @@
     color: #495057;
 }
 
+@media (max-width: 768px) {
+    .exchange-group {
+        margin-bottom: 15px;
+    }
+
+    .select-options {
+        margin-bottom: 15px;
+    }
+}
+
 .left-input {
     padding-right: 1px;
 }
@@ -130,6 +140,13 @@
     color: #222222;
 }
 
+@media (min-width: 992px) {
+    .sort-container {
+        display: block;
+        margin: auto;
+    }
+}
+ 
 .sort-input {
     padding: 15px 20px;
     border-radius: 8px;
@@ -173,4 +190,36 @@
     color: #2a74e7;
     margin: 10px 0;
     font-weight: 500;
+}
+
+.pagination {
+    margin-top: 50px;
+}
+
+.pagination-control {
+    background-color: transparent;
+    color: #222222;
+}
+
+.pagination-numbers {
+    background-color: transparent;
+    color: #222222;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.pagination-numbers:focus {
+    background-color: #b6cdf2;
+    color: #2a74e7;
+    outline: #b6cdf2;
+    border-radius: 40px;
+    padding: 10px 17px;
+}
+
+.pagination-numbers:active {
+    background-color: #b6cdf2;
+    color: #2a74e7;
+    outline: #b6cdf2;
+    border-radius: 40px;
+    padding: 10px 17px;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import '../styles/ViewVehicle.css'
 import Header from '../components/Header'
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import ViewVehicleForm from "../components/ViewVehicleForm";
 import CarCarousel from "../components/CarCarousel";
 import VehicleSpecs from "../components/VehicleSpecs";
@@ -16,6 +16,10 @@ const ViewVehicle = () => {
         <Header />
         <div className="row view-vehicle-row">
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <Link to='/buy-a-car'>
+            <i className="bi bi-arrow-left"></i>
+            {'  '}Back
+            </Link>
                 <CarCarousel />
                 <VehicleSpecs />
             </div>

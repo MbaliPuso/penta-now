@@ -6,6 +6,14 @@ import carTwo from "../assets/chevrolet-utility.jpg";
 import carThree from "../assets/nissan-qashqai.jpg";
 import carFour from "../assets/Honda_Jazz.jpg";
 import carFive from "../assets/datsun-go.jpg";
+import carSix from "../assets/kwid-1.0-life.jpg";
+import carSeven from "../assets/kwid-1.0-expression.jpg";
+import carEight from "../assets/Renault-Triber.jpg";
+import carNine from "../assets/suzuki-s-presso-1.0-gl.jpg";
+import carTen from "../assets/suzuki-jimny-1.3.jpg";
+import carEleven from "../assets/haval-h1.jpg";
+import carTwelve from "../assets/nissan-np200.jpg";
+import carThirteen from "../assets/mahindra-pikup.jpg";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 const AllCars = () => {
@@ -98,6 +106,159 @@ const AllCars = () => {
         serviceHistory: "yes",
       },
       {
+        image: carSix,
+        type: "Hatchback",
+        make: "Renault",
+        model: "Kwid",
+        variant: "1.0 LIFE",
+        year: 2023,
+        mileage: 71000,
+        price: "129 900",
+        engine: 1000,
+        fuel: "Petrol",
+        transmission: "Manual",
+        color: "White",
+        branch: "Gezina",
+        stockNo: "UNG51",
+        serviceHistory: "yes",
+      },
+      {
+        image: carSeven,
+        type: "Hatchback",
+        make: "Renault",
+        model: "Kwid",
+        variant: "1.0 EXPRESSION / LIFE 5DR",
+        year: 2022,
+        mileage: 28000,
+        price: "139 900",
+        engine: 1000,
+        fuel: "Petrol",
+        transmission: "Manual",
+        color: "White",
+        branch: "Lynnwood",
+        stockNo: "UNL10035",
+        serviceHistory: "yes",
+      },
+      {
+        image: carEight,
+        type: "Hatchback",
+        make: "Renault",
+        model: "Triber",
+        variant: "1.0 EXPRESSION P/V",
+        year: 2022,
+        mileage: 32838,
+        price: "149 800",
+        engine: 1000,
+        fuel: "Petrol",
+        transmission: "Manual",
+        color: "White",
+        branch: "Klerksdorp",
+        stockNo: "UNK51",
+        serviceHistory: "yes",
+      },
+      {
+        image: carNine,
+        type: "Hatchback",
+        make: "Suzuki",
+        model: "S.presso",
+        variant: "1.0 GL MT",
+        year: 2023,
+        mileage: 37900,
+        price: "149 900",
+        engine: 1000,
+        fuel: "Petrol",
+        transmission: "Manual",
+        color: "White",
+        branch: "Centurion",
+        stockNo: "PCU10025",
+        serviceHistory: "yes",
+      },
+      {
+        image: carTen,
+        type: "Hatchback",
+        make: "Suzuki",
+        model: "Jimny",
+        variant: "1.3",
+        year: 2012,
+        mileage: 161000,
+        price: "149 900",
+        engine: 1300,
+        fuel: "Petrol",
+        transmission: "Manual",
+        color: "Grey",
+        branch: "Gezina",
+        stockNo: "UNG12",
+        serviceHistory: "yes",
+      },
+      {
+        image: carNine,
+        type: "Hatchback",
+        make: "Suzuki",
+        model: "S.presso",
+        variant: "1.0 GL MT",
+        year: 2023,
+        mileage: 37801,
+        price: "149 900",
+        engine: 1000,
+        fuel: "Petrol",
+        transmission: "Manual",
+        color: "White",
+        branch: "Mokopane",
+        stockNo: "UNM13",
+        serviceHistory: "yes",
+      },
+      {
+        image: carEleven,
+        type: "Hatchback",
+        make: "Haval",
+        model: "H1",
+        variant: "1.5 VVT",
+        year: 2020,
+        mileage: 106000,
+        price: "149 950",
+        engine: 1500,
+        fuel: "Petrol",
+        transmission: "Manual",
+        color: "Red",
+        branch: "Centurion",
+        stockNo: "PCU10052",
+        serviceHistory: "yes",
+      },
+      {
+        image: carTwelve,
+        type: "Pickup",
+        make: "Nissan",
+        model: "NP200",
+        variant: "1.5 (A/C) Safety UA7",
+        year: 2020,
+        mileage: 143430,
+        price: "159 900",
+        engine: 1600,
+        fuel: "Petrol",
+        transmission: "Manual",
+        color: "WHITE",
+        branch: "Mokopane",
+        stockNo: "UNM5",
+        serviceHistory: "yes",
+      },
+      {
+        image: carThirteen,
+        type: "Pickup",
+        make: "Mahindra",
+        model: "PIK UP",
+        variant: "2.2 mHAWK S4 P/U S/C",
+        year: 2022,
+        mileage: 85331,
+        price: "179 900",
+        engine: 2200,
+        fuel: "Diesel",
+        transmission: "Manual",
+        color: "WHITE",
+        branch: "Brits",
+        stockNo: "UNB96",
+        serviceHistory: "yes",
+      },
+      {
         image: carOne,
         type: "Hatch",
         make: "Mercedes Benz",
@@ -182,6 +343,125 @@ const AllCars = () => {
         stockNo: "UNG36",
         serviceHistory: "yes",
       },
+      {
+        image: carSix,
+        type: "Hatchback",
+        make: "Renault",
+        model: "Kwid",
+        variant: "1.0 LIFE",
+        year: 2023,
+        mileage: 71000,
+        price: "129 900",
+        engine: 1000,
+        fuel: "Petrol",
+        transmission: "Manual",
+        color: "White",
+        branch: "Gezina",
+        stockNo: "UNG51",
+        serviceHistory: "yes",
+      },
+      {
+        image: carSeven,
+        type: "Hatchback",
+        make: "Renault",
+        model: "Kwid",
+        variant: "1.0 EXPRESSION / LIFE 5DR",
+        year: 2022,
+        mileage: 28000,
+        price: "139 900",
+        engine: 1000,
+        fuel: "Petrol",
+        transmission: "Manual",
+        color: "White",
+        branch: "Lynnwood",
+        stockNo: "UNL10035",
+        serviceHistory: "yes",
+      },
+      {
+        image: carEight,
+        type: "Hatchback",
+        make: "Renault",
+        model: "Triber",
+        variant: "1.0 EXPRESSION P/V",
+        year: 2022,
+        mileage: 32838,
+        price: "149 800",
+        engine: 1000,
+        fuel: "Petrol",
+        transmission: "Manual",
+        color: "White",
+        branch: "Klerksdorp",
+        stockNo: "UNK51",
+        serviceHistory: "yes",
+      },
+      {
+        image: carNine,
+        type: "Hatchback",
+        make: "Suzuki",
+        model: "S.presso",
+        variant: "1.0 GL MT",
+        year: 2023,
+        mileage: 37900,
+        price: "149 900",
+        engine: 1000,
+        fuel: "Petrol",
+        transmission: "Manual",
+        color: "White",
+        branch: "Centurion",
+        stockNo: "PCU10025",
+        serviceHistory: "yes",
+      },
+      {
+        image: carTen,
+        type: "Hatchback",
+        make: "Suzuki",
+        model: "Jimny",
+        variant: "1.3",
+        year: 2012,
+        mileage: 161000,
+        price: "149 900",
+        engine: 1300,
+        fuel: "Petrol",
+        transmission: "Manual",
+        color: "Grey",
+        branch: "Gezina",
+        stockNo: "UNG12",
+        serviceHistory: "yes",
+      },
+      {
+        image: carNine,
+        type: "Hatchback",
+        make: "Suzuki",
+        model: "S.presso",
+        variant: "1.0 GL MT",
+        year: 2023,
+        mileage: 37801,
+        price: "149 900",
+        engine: 1000,
+        fuel: "Petrol",
+        transmission: "Manual",
+        color: "White",
+        branch: "Mokopane",
+        stockNo: "UNM13",
+        serviceHistory: "yes",
+      },
+      {
+        image: carEleven,
+        type: "Hatchback",
+        make: "Haval",
+        model: "H1",
+        variant: "1.5 VVT",
+        year: 2020,
+        mileage: 106000,
+        price: "149 950",
+        engine: 1500,
+        fuel: "Petrol",
+        transmission: "Manual",
+        color: "Red",
+        branch: "Centurion",
+        stockNo: "PCU10052",
+        serviceHistory: "yes",
+      }
     ],
     []
   );
@@ -201,10 +481,34 @@ const AllCars = () => {
   const [showFilters, setShowFilters] = useState(false);
   const [viewMode, setViewMode] = useState("grid");
   const [sortCriteria, setSortCriteria] = useState("");
+  // state to manage paging
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 12;
+
+  // calculate total pages
+  const totalPages = Math.ceil(cars.length / itemsPerPage);
+
+  // Get current items based on pagination
+  const currentItems = filteredCars.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
+  );
+
+  const pageNumbers = Array.from(
+    { length: totalPages },
+    (_, index) => index + 1
+  );
 
   const viewVehicle = (car) => {
     navigate("/view-vehicle", { state: { car } });
   };
+
+  useEffect(() => {
+    // Check the viewport width then sets grid as view mode
+    if (window.inner < 576) {
+      setViewMode("grid");
+    }
+  }, []);
 
   useEffect(() => {
     // Filter cars based on selected filters
@@ -282,7 +586,7 @@ const AllCars = () => {
             <div className="col-xxl-10 col-xl-10 col-lg-10 col-md-10">
               <form className="trip-form">
                 <div className="row align-items-center">
-                  <div className="mb-md-0 col-md-3">
+                  <div className="mb-md-0 col-md-3 select-options">
                     <select
                       id="makeFilter"
                       data-filter="make"
@@ -312,7 +616,7 @@ const AllCars = () => {
                       <option>Volkswagen</option>
                     </select>
                   </div>
-                  <div className="col-md-3">
+                  <div className="col-md-3 select-options">
                     <select
                       id="modelFilter"
                       data-filter="model"
@@ -332,7 +636,7 @@ const AllCars = () => {
                         ))}
                     </select>
                   </div>
-                  <div className="col-md-3">
+                  <div className="col-md-3 select-options">
                     <select
                       id="mileageFilter"
                       data-filter="mileage"
@@ -347,7 +651,7 @@ const AllCars = () => {
                       <option value="200000">200000 KM</option>
                     </select>
                   </div>
-                  <div className="col-md-3">
+                  <div className="col-md-3 select-options">
                     <select
                       id="branchFilter"
                       className="custom-select filter"
@@ -365,7 +669,7 @@ const AllCars = () => {
                   </div>
                 </div>
                 <div className="row align-items-center mt-4">
-                  <div className="col-md-3">
+                  <div className="col-md-3 select-options">
                     <select
                       id="fuelFilter"
                       data-filter="fuel"
@@ -378,7 +682,7 @@ const AllCars = () => {
                       <option>Diesel</option>
                     </select>
                   </div>
-                  <div className="col-md-3">
+                  <div className="col-md-3 select-options">
                     <select
                       id="transmissionFilter"
                       data-filter="transmission"
@@ -394,7 +698,7 @@ const AllCars = () => {
                   </div>
                   <div className="col-md-3">
                     <div className="row">
-                      <div className="col-sm-6 col-md-6 left-input">
+                      <div className="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-6 left-input">
                         <div className="exchange-group small">
                           <div className="input-col">
                             <input
@@ -408,7 +712,7 @@ const AllCars = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="col-sm-6 col-md-6 right-input">
+                      <div className="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-6 right-input">
                         <div className="exchange-group small">
                           <div className="input-col">
                             <input
@@ -426,7 +730,7 @@ const AllCars = () => {
                   </div>
                   <div className="col-md-3">
                     <div className="row">
-                      <div className="col-sm-6 col-md-6 left-input">
+                      <div className="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-6 left-input">
                         <div className="exchange-group small">
                           <div className="input-col">
                             <input
@@ -440,7 +744,7 @@ const AllCars = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="col-sm-6 col-md-6 right-input">
+                      <div className="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-6 right-input">
                         <div className="exchange-group small">
                           <div className="input-col">
                             <input
@@ -466,22 +770,34 @@ const AllCars = () => {
         <div className="container mt-5">
           {/* sort container */}
           <div className="d-flex justify-content-between align-items-center mb-4">
-            <div className="d-block m-auto">
+            <div className="d-md-block m-auto d-none">
               <button
-                className={`view-mode-button ${viewMode === "grid" ? "active" : ""}`}
+                className={`view-mode-button ${
+                  viewMode === "grid" ? "active" : ""
+                }`}
                 onClick={() => setViewMode("grid")}
               >
-                <span className="mode-icon"><i className="bi bi-grid"></i></span> <span className="view-text">Grid View</span>
+                <span className="mode-icon">
+                  <i className="bi bi-grid"></i>
+                </span>{" "}
+                <span className="view-text">Grid View</span>
               </button>
               <button
-                className={`view-mode-button ${viewMode === "list" ? "active" : ""}`}
+                className={`view-mode-button ${
+                  viewMode === "list" ? "active" : ""
+                }`}
                 onClick={() => setViewMode("list")}
               >
-                <span className="mode-icon"><i className="bi bi-list"></i></span> <span className="view-text">List View</span>
+                <span className="mode-icon">
+                  <i className="bi bi-list"></i>
+                </span>{" "}
+                <span className="view-text">List View</span>
               </button>
             </div>
-            <div className="sort-container d-flex align-items-center">
-              <span className="view-text" style={{ paddingRight: '20px' }}>Sort By:</span>
+            <div className="col-sm-12 col-md-auto sort-container d-flex align-items-center">
+              <span className="view-text" style={{ paddingRight: "20px" }}>
+                Sort By:
+              </span>
               <select
                 value={sortCriteria}
                 onChange={(e) => setSortCriteria(e.target.value)}
@@ -501,7 +817,7 @@ const AllCars = () => {
             {viewMode === "grid" ? (
               // grid view
               <div className="row justify-content-center">
-                {filteredCars.map((car, index) => (
+                {currentItems.map((car, index) => (
                   <div
                     className="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 car mt-4 mb-4"
                     key={index}
@@ -557,9 +873,16 @@ const AllCars = () => {
                               {car.year}
                             </div>
                           </div>
-                          <div className="price"><strong>R {car.price}</strong></div>
+                          <div className="price">
+                            <strong>R {car.price}</strong>
+                          </div>
                         </div>
-                        <button onClick={() => viewVehicle(car)} className="view-details-button">View Details</button>
+                        <button
+                          onClick={() => viewVehicle(car)}
+                          className="view-details-button"
+                        >
+                          View Details
+                        </button>
                         <div className="branch">{car.branch}</div>
                       </div>
                     </div>
@@ -569,22 +892,18 @@ const AllCars = () => {
             ) : (
               // list view
               <div className="row justify-content-center">
-                {filteredCars.map((car, index) => (
+                {currentItems.map((car, index) => (
                   <div key={index} className="col-12">
                     <div className="card border list-car-item">
                       <div className="row mb-4">
-                        <div
-                          className="col-md-3"
-                        >
+                        <div className="col-md-3">
                           <img
                             src={car.image}
                             alt={car.make}
                             className="img-fluid car-list-image"
                           />
                         </div>
-                        <div
-                          className="col-md-6"
-                        >
+                        <div className="col-md-6">
                           <h5 className="list-car-title">
                             {car.make} {car.model}
                           </h5>
@@ -596,7 +915,7 @@ const AllCars = () => {
                                   role="img"
                                   className="md hydrated"
                                   aria-label="speedometer outline"
-                                ></ion-icon>{' '}
+                                ></ion-icon>{" "}
                               </span>
                               {car.mileage}
                             </div>
@@ -607,7 +926,7 @@ const AllCars = () => {
                                   role="img"
                                   className="md hydrated"
                                   aria-label="car outline"
-                                ></ion-icon>{' '}
+                                ></ion-icon>{" "}
                               </span>
                               {car.transmission}
                             </div>
@@ -618,7 +937,7 @@ const AllCars = () => {
                                   role="img"
                                   className="md hydrated"
                                   aria-label="calendar outline"
-                                ></ion-icon>{' '}
+                                ></ion-icon>{" "}
                               </span>
                               {car.year}
                             </div>
@@ -629,7 +948,7 @@ const AllCars = () => {
                                   role="img"
                                   className="md hydrated"
                                   aria-label="location outline"
-                                ></ion-icon>{' '}
+                                ></ion-icon>{" "}
                               </span>
                               {car.branch}
                             </div>
@@ -640,12 +959,11 @@ const AllCars = () => {
                           >
                             View Details
                           </button>
-                          
                         </div>
-                        <div
-                          className="col-md-3 car-price"
-                        >
-                         <div className="align-items-end list-price text-center"><strong>R {car.price}</strong></div> 
+                        <div className="col-md-3 car-price">
+                          <div className="align-items-end list-price text-center">
+                            <strong>R {car.price}</strong>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -661,6 +979,37 @@ const AllCars = () => {
           </div>
           {/* view mode change end */}
         </div>
+        {/* pagination */}
+        <div className="d-flex justify-content-center pagination">
+          <button
+            onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+            disabled={currentPage === 1}
+            className="pagination-control"
+          >
+            <i className="bi bi-chevron-left"></i>
+          </button>
+          <span>
+            {pageNumbers.map((number) => (
+              <button
+                key={number}
+                onClick={() => setCurrentPage(number)}
+                className={`pagination-numbers ${number === currentPage ? "active" : ""}`}
+              >
+                {number}
+              </button>
+            ))}
+          </span>
+          <button
+            onClick={() =>
+              setCurrentPage((prev) => Math.min(prev + 1, totalPages))
+            }
+            disabled={currentPage === totalPages}
+            className="pagination-control"
+          >
+            <i className="bi bi-chevron-right"></i>
+          </button>
+        </div>
+        {/* pagination end */}
       </div>
     </>
   );
