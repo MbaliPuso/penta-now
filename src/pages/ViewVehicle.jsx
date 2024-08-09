@@ -16,7 +16,7 @@ const ViewVehicle = () => {
         <Header />
         <div className="row view-vehicle-row">
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
-            <Link to='/buy-a-car'>
+            <Link to='/buy-a-car' className="all-cars-link">
             <i className="bi bi-arrow-left"></i>
             {'  '}Back
             </Link>
