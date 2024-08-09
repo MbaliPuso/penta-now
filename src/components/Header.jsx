@@ -1,8 +1,30 @@
 import React from "react";
 import logo from '../assets/logo.png';
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
+
+  const handleSell = () => {
+    navigate("/sell-my-car");
+  }
+
+  const handleBuy = () => {
+    navigate("/buy-a-car");
+  }
+
+  const handlePentaApproved = () => {
+    navigate("/penta-approved");
+  }
+
+  const handleLocations = () => {
+    navigate("/our-locations");
+  }
+
+  const handleContact = () => {
+    navigate("/contact-us");
+  }
+
   return (
     <>
       <div className="site-mobile-menu site-navbar-target">
@@ -34,30 +56,20 @@ const Header = () => {
                 role="navigation"
               >
                 <ul className="site-menu main-menu js-clone-nav ml-auto ">
-                  <li className="active">
-                    <Link to='/sell-my-car' className="nav-link">
+                  <li className="active nav-link" style={{ cursor: "pointer" }} onClick={() => handleSell()}>
                       Sell a car
-                    </Link>
                   </li>
-                  <li>
-                    <Link to='/buy-a-car' className="nav-link">
+                  <li className="nav-link" style={{ cursor: "pointer" }} onClick={() => handleBuy()}>
                       Buy a car
-                    </Link>
                   </li>
-                  <li>
-                    <Link to='/penta-approved' className="nav-link">
+                  <li className="nav-link" style={{ cursor: "pointer" }} onClick={() => handlePentaApproved()}>
                       Penta Approved
-                    </Link>
                   </li>
-                  <li>
-                    <Link to='/our-locations' className="nav-link">
+                  <li className="nav-link" style={{ cursor: "pointer" }} onClick={() => handleLocations()}>
                       Our locations
-                    </Link>
                   </li>
-                  <li>
-                    <Link to='/contact-us' className="nav-link">
+                  <li className="nav-link" style={{ cursor: "pointer" }} onClick={() => handleContact()}>
                       Contact Us
-                    </Link>
                   </li>
                 </ul>
               </nav>
