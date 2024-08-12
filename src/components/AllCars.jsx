@@ -505,7 +505,7 @@ const AllCars = () => {
 
   useEffect(() => {
     // Check the viewport width then sets grid as view mode
-    if (window.innerWidth < 576) {
+    if (window.innerWidth < 576) { 
       setViewMode("grid");
     }
   }, []);
