@@ -461,7 +461,7 @@ const AllCars = () => {
         branch: "Centurion",
         stockNo: "PCU10052",
         serviceHistory: "yes",
-      }
+      },
     ],
     []
   );
@@ -505,7 +505,7 @@ const AllCars = () => {
 
   useEffect(() => {
     // Check the viewport width then sets grid as view mode
-    if (window.innerWidth < 576) { 
+    if (window.innerWidth < 576) {
       setViewMode("grid");
     }
   }, []);
@@ -824,7 +824,10 @@ const AllCars = () => {
                   >
                     <div
                       className="card vehicle-card"
-                      onClick={() => viewVehicle(car)}
+                      onClick={() => {
+                        viewVehicle(car);
+                        window.scrollTo(0, 0);
+                      }}
                     >
                       <img
                         src={car.image}
@@ -955,7 +958,10 @@ const AllCars = () => {
                           </div>
                           <button
                             className="view-list-button mt-2"
-                            onClick={() => viewVehicle(car)}
+                            onClick={() => {
+                              viewVehicle(car);
+                              window.scrollTo(0, 0);
+                            }}
                           >
                             View Details
                           </button>
@@ -992,8 +998,13 @@ const AllCars = () => {
             {pageNumbers.map((number) => (
               <button
                 key={number}
-                onClick={() => setCurrentPage(number)}
-                className={`pagination-numbers ${number === currentPage ? "active" : ""}`}
+                onClick={() => {
+                  setCurrentPage(number);
+                  window.scrollTo(0, 0);
+                }}
+                className={`pagination-numbers ${
+                  number === currentPage ? "active" : ""
+                }`}
               >
                 {number}
               </button>
