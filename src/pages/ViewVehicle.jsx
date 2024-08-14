@@ -21,7 +21,7 @@ const ViewVehicle = () => {
             {'  '}Back
             </Link>
                 <CarCarousel />
-                <VehicleSpecs />
+                
             </div>
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 text-section">
                 <h4 className="make-model">{car.make} - {car.model}</h4>
@@ -52,9 +52,10 @@ const ViewVehicle = () => {
                     </div>
                 </div>
                 <h2 className="view-vehicle-price">R {car.price}</h2>
-                <ViewVehicleForm />
+                <VehicleSpecs />
             </div>
         </div>
+        <ViewVehicleForm />
         <Footer />
         </>
     );

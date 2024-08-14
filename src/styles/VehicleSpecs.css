@@ -1,5 +1,13 @@
 .spec-items {
-    padding: 17px;
+    padding-right: 50px;
+}
+
+@media (max-width: 576px) {
+    .spec-items {
+        display: block;
+        margin: auto;
+        padding: 17px;
+    }
 }
 
 .spec-item {

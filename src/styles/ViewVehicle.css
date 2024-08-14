@@ -8,6 +8,7 @@
 @media (max-width: 576px) {
     .make-model, .vehicles-info, .view-vehicle-price {
         padding-left: 10px;
+        margin: 15px 0;
     }
 
     .contact-view-form {
@@ -19,6 +20,13 @@
     display: flex;
     justify-content: space-between;
     max-width: 80%;
+}
+
+@media (max-width: 576px) {
+    .vehicles-info {
+        max-width: 100%;
+        padding-right: 20px;
+    }
 }
 
 .info-icon {
@@ -35,6 +43,10 @@
     color: #007bff;
     font-weight: 700;
     margin: 5px 0;
+}
+
+.text-section {
+    margin-bottom: 40px;
 }
 
 .contact-view-form {
