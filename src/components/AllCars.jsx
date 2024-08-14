@@ -1116,6 +1116,13 @@ const AllCars = () => {
                     <div className="card border list-car-item">
                       <div className="row mb-4">
                         <div className="col-md-3">
+                          {car.pentaApproved === "yes" && (
+                            <img
+                              src={approvedBadge}
+                              alt={car.make}
+                              className="penta-approved-badge"
+                            />
+                          )}
                           <img
                             src={car.image}
                             alt={car.make}

@@ -6,6 +6,7 @@ import PentaApproved from './pages/PentaApproved';
 import OurLocations from './pages/OurLocations';
 import ContactUs from './pages/ContactUs';
 import ViewVehicle from './pages/ViewVehicle';
+import PentaApprovedInfo from './components/PentaApprovedInfo';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route path='/our-locations' element={<OurLocations />} />
       <Route path='/contact-us' element={<ContactUs />} />
       <Route path='/view-vehicle' element={<ViewVehicle />} />
+      <Route path='/approved-info' element={<PentaApprovedInfo />} />
     </Routes>
     </BrowserRouter>
     </>
