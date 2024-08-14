@@ -92,7 +92,12 @@ const ViewVehicle = () => {
             )}
           </div>
           <h2 className="view-vehicle-price">R {car.price}</h2>
-          <PentaApprovedInfo />
+          {car.pentaApproved === "yes" && (
+            <PentaApprovedInfo />
+          )}
+          {car.pentaApproved !== "yes" && (
+            <VehicleSpecs />
+          )}
         </div>
       </div>
       {car.pentaApproved === "yes" ? (
