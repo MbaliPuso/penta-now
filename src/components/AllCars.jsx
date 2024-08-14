@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useMemo } from "react";
 import "../styles/AllCars.css";
 import { useNavigate } from "react-router-dom";
+import approvedBadge from "../assets/Approved_badge.png";
 import carOne from "../assets/Mercedes-Benz-B-class.jpg";
 import carTwo from "../assets/chevrolet-utility.jpg";
 import carThree from "../assets/nissan-qashqai.jpg";
@@ -14,6 +15,10 @@ import carTen from "../assets/suzuki-jimny-1.3.jpg";
 import carEleven from "../assets/haval-h1.jpg";
 import carTwelve from "../assets/nissan-np200.jpg";
 import carThirteen from "../assets/mahindra-pikup.jpg";
+import carFourteen from "../assets/suzuki-celerio-1.0.jpg";
+import carFifteen from "../assets/suzuki-s-presso-s-edition.jpg";
+import carSixteen from "../assets/suzuki-vitara-1.6-glx.jpg";
+import carSeventeen from "../assets/vitara-1.6-glx-allgrip.jpg";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 const AllCars = () => {
@@ -34,6 +39,7 @@ const AllCars = () => {
         transmission: "Automatic",
         color: "Comet Grey",
         branch: "Lynnwood",
+        pentaApproved: "no",
         stockNo: "UNL10023",
         serviceHistory: "yes",
       },
@@ -51,6 +57,7 @@ const AllCars = () => {
         transmission: "Manual",
         color: "WHITE",
         branch: "Centurion",
+        pentaApproved: "no",
         stockNo: "PCU10006",
         serviceHistory: "yes",
       },
@@ -68,6 +75,7 @@ const AllCars = () => {
         transmission: "CVT",
         color: "Metallic Silky Silver",
         branch: "Gezina",
+        pentaApproved: "no",
         stockNo: "UNG38",
         serviceHistory: "yes",
       },
@@ -85,6 +93,7 @@ const AllCars = () => {
         transmission: "Manual",
         color: "WHITE",
         branch: "Centurion",
+        pentaApproved: "no",
         stockNo: "PCU10067",
         serviceHistory: "yes",
       },
@@ -102,6 +111,7 @@ const AllCars = () => {
         transmission: "Manual",
         color: "Silver",
         branch: "Gezina",
+        pentaApproved: "no",
         stockNo: "UNG36",
         serviceHistory: "yes",
       },
@@ -119,6 +129,7 @@ const AllCars = () => {
         transmission: "Manual",
         color: "White",
         branch: "Gezina",
+        pentaApproved: "no",
         stockNo: "UNG51",
         serviceHistory: "yes",
       },
@@ -136,6 +147,7 @@ const AllCars = () => {
         transmission: "Manual",
         color: "White",
         branch: "Lynnwood",
+        pentaApproved: "no",
         stockNo: "UNL10035",
         serviceHistory: "yes",
       },
@@ -153,6 +165,7 @@ const AllCars = () => {
         transmission: "Manual",
         color: "White",
         branch: "Klerksdorp",
+        pentaApproved: "no",
         stockNo: "UNK51",
         serviceHistory: "yes",
       },
@@ -170,6 +183,7 @@ const AllCars = () => {
         transmission: "Manual",
         color: "White",
         branch: "Centurion",
+        pentaApproved: "no",
         stockNo: "PCU10025",
         serviceHistory: "yes",
       },
@@ -187,6 +201,7 @@ const AllCars = () => {
         transmission: "Manual",
         color: "Grey",
         branch: "Gezina",
+        pentaApproved: "no",
         stockNo: "UNG12",
         serviceHistory: "yes",
       },
@@ -204,6 +219,7 @@ const AllCars = () => {
         transmission: "Manual",
         color: "White",
         branch: "Mokopane",
+        pentaApproved: "no",
         stockNo: "UNM13",
         serviceHistory: "yes",
       },
@@ -221,6 +237,7 @@ const AllCars = () => {
         transmission: "Manual",
         color: "Red",
         branch: "Centurion",
+        pentaApproved: "no",
         stockNo: "PCU10052",
         serviceHistory: "yes",
       },
@@ -238,6 +255,7 @@ const AllCars = () => {
         transmission: "Manual",
         color: "WHITE",
         branch: "Mokopane",
+        pentaApproved: "no",
         stockNo: "UNM5",
         serviceHistory: "yes",
       },
@@ -255,7 +273,98 @@ const AllCars = () => {
         transmission: "Manual",
         color: "WHITE",
         branch: "Brits",
+        pentaApproved: "no",
         stockNo: "UNB96",
+        serviceHistory: "yes",
+      },
+      {
+        image: carFourteen,
+        type: "Hatchback",
+        make: "Suzuki",
+        model: "Celerio",
+        variant: "1.0 GL MT",
+        year: 2022,
+        mileage: 49000,
+        price: "169 900",
+        engine: 1000,
+        fuel: "Petrol",
+        transmission: "Manual",
+        color: "WHITE",
+        branch: "Centurion",
+        pentaApproved: "yes",
+        stockNo: "PCU10057",
+        serviceHistory: "yes",
+      },
+      {
+        image: carFifteen,
+        type: "Hatchback",
+        make: "Suzuki",
+        model: "S.presso",
+        variant: "1.0 S-Edition MT MC",
+        year: 2023,
+        mileage: 6000,
+        price: "173 900",
+        engine: 1000,
+        fuel: "Petrol",
+        transmission: "Manual",
+        color: "Silver",
+        branch: "Gezina",
+        pentaApproved: "yes",
+        stockNo: "UNG19",
+        serviceHistory: "yes",
+      },
+      {
+        image: carFifteen,
+        type: "Hatchback",
+        make: "Suzuki",
+        model: "S.presso",
+        variant: "1.0 S-Edition MT MC",
+        year: 2023,
+        mileage: 11577,
+        price: "173 900",
+        engine: 1000,
+        fuel: "Petrol",
+        transmission: "Manual",
+        color: "Silver",
+        branch: "Gezina",
+        pentaApproved: "yes",
+        stockNo: "UNG21",
+        serviceHistory: "yes",
+      },
+      {
+        image: carSixteen,
+        type: "Hatchback",
+        make: "Suzuki",
+        model: "Vitara",
+        variant: "1.6 GLX ALLGRIP",
+        year: 2024,
+        mileage: 130,
+        price: "388 900",
+        engine: 130,
+        fuel: "Petrol",
+        transmission: "Manual",
+        color: "TURQUOISE/BLACK",
+        branch: "Brits",
+        pentaApproved: "yes",
+        stockNo: "UNB55",
+        serviceHistory: "yes",
+      },
+      {
+        image: carSeventeen,
+        type: "Hatchback",
+        make: "Suzuki",
+        model: "Vitara",
+        variant: "1.6 GLX ALLGRIP",
+        year: 2024,
+        mileage: 413,
+        price: "389 900",
+        engine: 1600,
+        fuel: "Petrol",
+        transmission: "Automatic",
+        color: "White",
+        branch: "Mokopane",
+        pentaApproved: "yes",
+        stockNo: "UNM17",
         serviceHistory: "yes",
       },
       {
@@ -272,6 +381,7 @@ const AllCars = () => {
         transmission: "Automatic",
         color: "Comet Grey",
         branch: "Lynnwood",
+        pentaApproved: "no",
         stockNo: "UNL10023",
         serviceHistory: "yes",
       },
@@ -289,6 +399,7 @@ const AllCars = () => {
         transmission: "Manual",
         color: "WHITE",
         branch: "Centurion",
+        pentaApproved: "no",
         stockNo: "PCU10006",
         serviceHistory: "yes",
       },
@@ -306,6 +417,7 @@ const AllCars = () => {
         transmission: "CVT",
         color: "Metallic Silky Silver",
         branch: "Gezina",
+        pentaApproved: "no",
         stockNo: "UNG38",
         serviceHistory: "yes",
       },
@@ -323,6 +435,7 @@ const AllCars = () => {
         transmission: "Manual",
         color: "WHITE",
         branch: "Centurion",
+        pentaApproved: "no",
         stockNo: "PCU10067",
         serviceHistory: "yes",
       },
@@ -340,6 +453,7 @@ const AllCars = () => {
         transmission: "Manual",
         color: "Silver",
         branch: "Gezina",
+        pentaApproved: "no",
         stockNo: "UNG36",
         serviceHistory: "yes",
       },
@@ -357,6 +471,7 @@ const AllCars = () => {
         transmission: "Manual",
         color: "White",
         branch: "Gezina",
+        pentaApproved: "no",
         stockNo: "UNG51",
         serviceHistory: "yes",
       },
@@ -374,6 +489,7 @@ const AllCars = () => {
         transmission: "Manual",
         color: "White",
         branch: "Lynnwood",
+        pentaApproved: "no",
         stockNo: "UNL10035",
         serviceHistory: "yes",
       },
@@ -391,6 +507,7 @@ const AllCars = () => {
         transmission: "Manual",
         color: "White",
         branch: "Klerksdorp",
+        pentaApproved: "no",
         stockNo: "UNK51",
         serviceHistory: "yes",
       },
@@ -408,6 +525,7 @@ const AllCars = () => {
         transmission: "Manual",
         color: "White",
         branch: "Centurion",
+        pentaApproved: "no",
         stockNo: "PCU10025",
         serviceHistory: "yes",
       },
@@ -425,6 +543,7 @@ const AllCars = () => {
         transmission: "Manual",
         color: "Grey",
         branch: "Gezina",
+        pentaApproved: "no",
         stockNo: "UNG12",
         serviceHistory: "yes",
       },
@@ -442,6 +561,7 @@ const AllCars = () => {
         transmission: "Manual",
         color: "White",
         branch: "Mokopane",
+        pentaApproved: "no",
         stockNo: "UNM13",
         serviceHistory: "yes",
       },
@@ -459,7 +579,98 @@ const AllCars = () => {
         transmission: "Manual",
         color: "Red",
         branch: "Centurion",
+        pentaApproved: "no",
         stockNo: "PCU10052",
+        serviceHistory: "yes",
+      },
+      {
+        image: carFourteen,
+        type: "Hatchback",
+        make: "Suzuki",
+        model: "Celerio",
+        variant: "1.0 GL MT",
+        year: 2022,
+        mileage: 49000,
+        price: "169 900",
+        engine: 1000,
+        fuel: "Petrol",
+        transmission: "Manual",
+        color: "WHITE",
+        branch: "Centurion",
+        pentaApproved: "yes",
+        stockNo: "PCU10057",
+        serviceHistory: "yes",
+      },
+      {
+        image: carFifteen,
+        type: "Hatchback",
+        make: "Suzuki",
+        model: "S.presso",
+        variant: "1.0 S-Edition MT MC",
+        year: 2023,
+        mileage: 6000,
+        price: "173 900",
+        engine: 1000,
+        fuel: "Petrol",
+        transmission: "Manual",
+        color: "Silver",
+        branch: "Gezina",
+        pentaApproved: "yes",
+        stockNo: "UNG19",
+        serviceHistory: "yes",
+      },
+      {
+        image: carFifteen,
+        type: "Hatchback",
+        make: "Suzuki",
+        model: "S.presso",
+        variant: "1.0 S-Edition MT MC",
+        year: 2023,
+        mileage: 11577,
+        price: "173 900",
+        engine: 1000,
+        fuel: "Petrol",
+        transmission: "Manual",
+        color: "Silver",
+        branch: "Gezina",
+        pentaApproved: "yes",
+        stockNo: "UNG21",
+        serviceHistory: "yes",
+      },
+      {
+        image: carSixteen,
+        type: "Hatchback",
+        make: "Suzuki",
+        model: "Vitara",
+        variant: "1.6 GLX ALLGRIP",
+        year: 2024,
+        mileage: 130,
+        price: "388 900",
+        engine: 130,
+        fuel: "Petrol",
+        transmission: "Manual",
+        color: "TURQUOISE/BLACK",
+        branch: "Brits",
+        pentaApproved: "yes",
+        stockNo: "UNB55",
+        serviceHistory: "yes",
+      },
+      {
+        image: carSeventeen,
+        type: "Hatchback",
+        make: "Suzuki",
+        model: "Vitara",
+        variant: "1.6 GLX ALLGRIP",
+        year: 2024,
+        mileage: 413,
+        price: "389 900",
+        engine: 1600,
+        fuel: "Petrol",
+        transmission: "Automatic",
+        color: "White",
+        branch: "Mokopane",
+        pentaApproved: "yes",
+        stockNo: "UNM17",
         serviceHistory: "yes",
       },
     ],
@@ -829,12 +1040,17 @@ const AllCars = () => {
                         window.scrollTo(0, 0);
                       }}
                     >
+                      {car.pentaApproved === "yes" && (
+                        <img
+                          src={approvedBadge}
+                          alt={car.make}
+                          className="penta-approved-badge"
+                        />
+                      )}
                       <img
                         src={car.image}
                         alt={car.make}
                         className="car-image"
-                        height={152}
-                        width={205}
                       />
                       <div className="vehicle-details">
                         <div style={{ color: "#1223594" }}>
@@ -988,7 +1204,10 @@ const AllCars = () => {
         {/* pagination */}
         <div className="d-flex justify-content-center pagination">
           <button
-            onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+            onClick={() => {
+              setCurrentPage((prev) => Math.max(prev - 1, 1));
+              window.scrollTo(0, 0);
+            }}
             disabled={currentPage === 1}
             className="pagination-control"
           >
@@ -1011,9 +1230,10 @@ const AllCars = () => {
             ))}
           </span>
           <button
-            onClick={() =>
-              setCurrentPage((prev) => Math.min(prev + 1, totalPages))
-            }
+            onClick={() => {
+              setCurrentPage((prev) => Math.min(prev + 1, totalPages));
+              window.scrollTo(0, 0);
+            }}
             disabled={currentPage === totalPages}
             className="pagination-control"
           >
