@@ -104,6 +104,13 @@
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
+
+@media (max-width: 576px) {
+    .car-image {
+        height: 200px;
+    }
+}
+
 .car-title {
     color: #27173E;
     font-size: 1em;
