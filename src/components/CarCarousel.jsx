@@ -54,7 +54,7 @@ const CarCarousel = () => {
             />
           ))}
         </div>
-        <Modal show={showModal} onHide={handleCloseModal} centered>
+        <Modal show={showModal} onHide={handleCloseModal} centered size="lg">
           <Modal.Header className="border-0">
             <Button
               variant="light"
