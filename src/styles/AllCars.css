@@ -218,15 +218,7 @@
     font-weight: 500;
 }
 
-.pagination-numbers:focus {
-    background-color: #b6cdf2;
-    color: #2a74e7;
-    outline: #b6cdf2;
-    border-radius: 40px;
-    padding: 10px 17px;
-}
-
-.pagination-numbers:active {
+.pagination-numbers.active {
     background-color: #b6cdf2;
     color: #2a74e7;
     outline: #b6cdf2;
