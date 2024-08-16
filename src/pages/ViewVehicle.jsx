@@ -42,7 +42,7 @@ const ViewVehicle = () => {
                     role="img"
                     className="md hydrated"
                     aria-label="speedometer outline"
-                  ></ion-icon>
+                  ></ion-icon>{' '}
                 </span>
                 {car.mileage} KM
               </div>
@@ -53,7 +53,7 @@ const ViewVehicle = () => {
                     role="img"
                     className="md hydrated"
                     aria-label="cog outline"
-                  ></ion-icon>
+                  ></ion-icon>{' '}
                 </span>
                 {car.transmission}
               </div>
@@ -64,7 +64,7 @@ const ViewVehicle = () => {
                     role="img"
                     className="md hydrated"
                     aria-label="car outline"
-                  ></ion-icon>
+                  ></ion-icon>{' '}
                 </span>
                 {car.fuel}
               </div>
@@ -75,20 +75,26 @@ const ViewVehicle = () => {
                     role="img"
                     className="md hydrated"
                     aria-label="location outline"
-                  ></ion-icon>
+                  ></ion-icon>{' '}
                 </span>
                 {car.branch}
               </div>
               {car.pentaApproved === "yes" && (
                 <div
-                  className="info-icon"
+                  className="more-info-icon"
                   onClick={() => handlePentaAproved()}
                   style={{ cursor: "pointer" }}
                 >
+                  
                   <span>
-                    <img src={approvedBadge} alt={car.make} width={40} />
+                    <img src={approvedBadge} alt={car.make} width={40} className="approved-badge-view" />
                   </span>{" "}
-                  Approved
+                  <span className="approved-icon-text">Approved</span>
+                  <span className="pulse-container rounded-circle">
+                    <span className="more-info-icon">
+                    <i className="bi bi-info"></i>
+                    </span>
+                  </span>
                 </div>
               )}
             </div>

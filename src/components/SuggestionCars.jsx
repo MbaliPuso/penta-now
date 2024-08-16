@@ -19,6 +19,7 @@ import carFifteen from "../assets/suzuki-s-presso-s-edition.jpg";
 import carSixteen from "../assets/suzuki-vitara-1.6-glx.jpg";
 import carSeventeen from "../assets/vitara-1.6-glx-allgrip.jpg";
 import "../styles/AllCars.css"; // Ensure this file contains your styling
+import "../styles/SuggestionCars.css";
 
 const SuggestionCars = () => {
   const navigate = useNavigate();
@@ -33,6 +34,8 @@ const SuggestionCars = () => {
 
   // Extract branch info from the car data
   const branchInfo = car.branchInfo[0];
+
+  // console.log(branchInfo);
   const branchName = branchInfo.branchName;
 
   // Since `address` is an array of objects, you need to access the first element.
@@ -417,7 +420,7 @@ const SuggestionCars = () => {
           branchName: "Mokopane",
           address: [
             {
-              addressLine1: "102 Thabo Mbeki Dr",
+              addressLine: "102 Thabo Mbeki Dr",
               town: "Mokopane",
               city: "Limpopo",
               code: "0601",
@@ -487,7 +490,7 @@ const SuggestionCars = () => {
           branchName: "Mokopane",
           address: [
             {
-              addressLine1: "102 Thabo Mbeki Dr",
+              addressLine: "102 Thabo Mbeki Dr",
               town: "Mokopane",
               city: "Limpopo",
               code: "0601",
@@ -697,7 +700,7 @@ const SuggestionCars = () => {
           branchName: "Mokopane",
           address: [
             {
-              addressLine1: "102 Thabo Mbeki Dr",
+              addressLine: "102 Thabo Mbeki Dr",
               town: "Mokopane",
               city: "Limpopo",
               code: "0601",
@@ -1082,7 +1085,7 @@ const SuggestionCars = () => {
           branchName: "Mokopane",
           address: [
             {
-              addressLine1: "102 Thabo Mbeki Dr",
+              addressLine: "102 Thabo Mbeki Dr",
               town: "Mokopane",
               city: "Limpopo",
               code: "0601",
@@ -1292,7 +1295,7 @@ const SuggestionCars = () => {
           branchName: "Mokopane",
           address: [
             {
-              addressLine1: "102 Thabo Mbeki Dr",
+              addressLine: "102 Thabo Mbeki Dr",
               town: "Mokopane",
               city: "Limpopo",
               code: "0601",
@@ -1308,105 +1311,119 @@ const SuggestionCars = () => {
   ];
 
   const filteredCars = suggestionCars.filter(
-    (suggestionCar) => suggestionCar.branchInfo[0].branchName === branchName && suggestionCar.stockNo !== car.stockNo
+    (suggestionCar) =>
+      suggestionCar.branchInfo[0].branchName === branchName &&
+      suggestionCar.stockNo !== car.stockNo
   );
 
   const viewVehicle = () => {
-    navigate("view-vehicle", { state: { car } });
-  }
+    navigate("/view-vehicle", { state: { car } });
+  };
 
   return (
     <div className="suggestion-cars-container">
-      <h4>{branchName}</h4>
-      <p>{addressLine}</p>
-      <p>{town}</p>
-      <p>{city}</p>
-      <p>{code}</p>
-      <a href={addressLink} target="_blank" rel="noopener noreferrer">
-        Get Directions
-      </a>
+      <div className="branch-info">
+        <div className="branch-address-view">
+          <p>{addressLine}</p>
+          <p>{town}</p>
+          <p>{city}</p>
+          <p>{code}</p>
+        </div>
+        <div className="branch-contact">
+          <p>
+            <a href={`mailto:${branchInfo.email}`} style={{ color: "inherit" }}>
+              {branchInfo.email}
+            </a>
+          </p>
+
+          <p>
+            <a href={`tel:${branchInfo.cell}`} style={{ color: "inherit" }}>
+              {branchInfo.cell}
+            </a>
+          </p>
+          <a href={addressLink} target="_blank" rel="noopener noreferrer">
+            Get Directions
+          </a>
+        </div>
+      </div>
 
       <section className="more-listings">
         <h2>More Listings from this Branch</h2>
         <div className="row cars-grid">
           {filteredCars.slice(0, 3).map((car, index) => (
             <div
-            className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 car mt-4 mb-4"
-            key={index}
-          >
-            <div
-              className="card vehicle-card"
-              onClick={() => {
-                viewVehicle(car);
-                window.scrollTo(0, 0);
-              }}
+              className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 car mt-4 mb-4"
+              key={index}
             >
-              {car.pentaApproved === "yes" && (
-                <img
-                  src={approvedBadge}
-                  alt={car.make}
-                  className="penta-approved-badge"
-                />
-              )}
-              <img
-                src={car.image}
-                alt={car.make}
-                className="car-image"
-              />
-              <div className="vehicle-details">
-                <div style={{ color: "#1223594" }}>
-                  <h5 className="car-title">
-                    {car.make} - {car.model}
-                  </h5>
-                  <div className="row car-details">
-                    <div className="col-4 mileage p-0">
-                      <div>
-                        <ion-icon
-                          name="speedometer-outline"
-                          role="img"
-                          className="md hydrated"
-                          aria-label="speedometer outline"
-                        ></ion-icon>
+              <div
+                className="card vehicle-card"
+                onClick={() => {
+                  viewVehicle(car);
+                  window.scrollTo(0, 0);
+                }}
+              >
+                {car.pentaApproved === "yes" && (
+                  <img
+                    src={approvedBadge}
+                    alt={car.make}
+                    className="penta-approved-badge"
+                  />
+                )}
+                <img src={car.image} alt={car.make} className="car-image" />
+                <div className="vehicle-details">
+                  <div style={{ color: "#1223594" }}>
+                    <h5 className="car-title">
+                      {car.make} - {car.model}
+                    </h5>
+                    <div className="row car-details">
+                      <div className="col-4 mileage p-0">
+                        <div>
+                          <ion-icon
+                            name="speedometer-outline"
+                            role="img"
+                            className="md hydrated"
+                            aria-label="speedometer outline"
+                          ></ion-icon>
+                        </div>
+                        {car.mileage}
                       </div>
-                      {car.mileage}
+                      <div className="col-4 transmission p-0">
+                        <div>
+                          <ion-icon
+                            name="car-outline"
+                            role="img"
+                            className="md hydrated"
+                            aria-label="car outline"
+                          ></ion-icon>
+                        </div>
+                        {car.transmission}
+                      </div>
+                      <div className="col-4 year p-0">
+                        <div>
+                          <ion-icon
+                            name="calendar-outline"
+                            role="img"
+                            className="md hydrated"
+                            aria-label="calendar outline"
+                          ></ion-icon>
+                        </div>
+                        {car.year}
+                      </div>
                     </div>
-                    <div className="col-4 transmission p-0">
-                      <div>
-                        <ion-icon
-                          name="car-outline"
-                          role="img"
-                          className="md hydrated"
-                          aria-label="car outline"
-                        ></ion-icon>
-                      </div>
-                      {car.transmission}
-                    </div>
-                    <div className="col-4 year p-0">
-                      <div>
-                        <ion-icon
-                          name="calendar-outline"
-                          role="img"
-                          className="md hydrated"
-                          aria-label="calendar outline"
-                        ></ion-icon>
-                      </div>
-                      {car.year}
+                    <div className="price">
+                      <strong>R {car.price}</strong>
                     </div>
                   </div>
-                  <div className="price">
-                    <strong>R {car.price}</strong>
-                  </div>
+                  <button
+                    onClick={() => viewVehicle(car)}
+                    className="view-details-button"
+                  >
+                    View Details
+                  </button>
+                  <div className="branch">{car.branch}</div>
                 </div>
-                <button
-                  onClick={() => viewVehicle(car)}
-                  className="view-details-button"
-                >
-                  View Details
-                </button>
-                <div className="branch">{car.branch}</div>
               </div>
             </div>
-          </div>
           ))}
         </div>
         {filteredCars.length > 3 && (

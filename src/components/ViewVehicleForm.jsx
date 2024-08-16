@@ -3,8 +3,8 @@ import React from "react";
 const ViewVehicleForm = () => {
   return (
     <>
-      <div className="container">
-        <form className="contact-view-form pt-4 d-block m-auto">
+      <div className="view-form-container mt-4">
+        <form className="contact-view-form pt-4">
           <h3 className="fill-in-details" style={{ fontSize: "1.75rem" }}>
             Fill in your details below and a dedicated consultant will contact
             you

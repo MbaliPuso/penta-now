@@ -395,7 +395,7 @@ const AllCars = () => {
             branchName: "Mokopane",
             address: [
               {
-                addressLine1: "102 Thabo Mbeki Dr",
+                addressLine: "102 Thabo Mbeki Dr",
                 town: "Mokopane",
                 city: "Limpopo",
                 code: "0601",
@@ -465,7 +465,7 @@ const AllCars = () => {
             branchName: "Mokopane",
             address: [
               {
-                addressLine1: "102 Thabo Mbeki Dr",
+                addressLine: "102 Thabo Mbeki Dr",
                 town: "Mokopane",
                 city: "Limpopo",
                 code: "0601",
@@ -675,7 +675,7 @@ const AllCars = () => {
             branchName: "Mokopane",
             address: [
               {
-                addressLine1: "102 Thabo Mbeki Dr",
+                addressLine: "102 Thabo Mbeki Dr",
                 town: "Mokopane",
                 city: "Limpopo",
                 code: "0601",
@@ -1060,7 +1060,7 @@ const AllCars = () => {
             branchName: "Mokopane",
             address: [
               {
-                addressLine1: "102 Thabo Mbeki Dr",
+                addressLine: "102 Thabo Mbeki Dr",
                 town: "Mokopane",
                 city: "Limpopo",
                 code: "0601",
@@ -1270,7 +1270,7 @@ const AllCars = () => {
             branchName: "Mokopane",
             address: [
               {
-                addressLine1: "102 Thabo Mbeki Dr",
+                addressLine: "102 Thabo Mbeki Dr",
                 town: "Mokopane",
                 city: "Limpopo",
                 code: "0601",

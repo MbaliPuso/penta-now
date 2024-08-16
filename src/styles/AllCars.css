@@ -141,6 +141,11 @@
 .view-details-button {
     padding: 5px 10px;
     font-size: 13px;
+    outline: none;
+}
+
+.view-details-button::selection {
+    outline: none;
 }
 
 /* list view css */

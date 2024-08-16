@@ -1,0 +1,8 @@
+.suggestion-cars-container {
+    margin-top: 15px;
+}
+
+.branch-info {
+    display: flex;
+    justify-content: space-between;
+}
