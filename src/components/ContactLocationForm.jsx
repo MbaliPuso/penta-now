@@ -4,6 +4,7 @@ import '../styles/ContactLocationForm.css';
 const LocationForm = () => {
   return (
     <>
+    <div className="container">
       <div className="row contact-location">
         <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12">
           <div className="small-contact">Contact Us</div>
@@ -61,6 +62,7 @@ const LocationForm = () => {
           </form>
         </div>
       </div>
+    </div>
     </>
   );
 };

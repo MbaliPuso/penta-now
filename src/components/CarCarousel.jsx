@@ -20,7 +20,7 @@ const CarCarousel = () => {
 
   return (
     <>
-      <div className="container">
+      <div className="container carousel-container">
         <Carousel
           activeIndex={photoIndex}
           onSelect={(selectedIndex) => setPhotoIndex(selectedIndex)}
@@ -32,7 +32,7 @@ const CarCarousel = () => {
               <Image
                 src={image}
                 alt={`Car ${index}`}
-                className="d-block w-100"
+                className="d-block w-100 img-thumbnail"
                 onClick={handleShowModal}
                 style={{ cursor: "pointer" }}
               />

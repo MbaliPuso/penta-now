@@ -1,3 +1,9 @@
+.vehicle-details-heading {
+    background-color: #F2F2F2;
+    padding: 15px 10px;
+    font-weight: 500;
+}
+
 .spec-items {
     padding-right: 50px;
 }
@@ -21,7 +27,7 @@
 }
 
 .spec-title-value {
-    color: #28a745;
+    color: #007bff;
     font-weight: bold;
     font-size: 16px;
 }

@@ -794,7 +794,7 @@ const approvedCars = cars.filter(car => car.pentaApproved === "yes");
         >
           {showFilters ? "Hide Filters" : "Show Filters"}
         </button>
-        <div className={showFilters ? "d-block" : "d-none d-md-block"}>
+        <div className={`container ${showFilters ? "d-block" : "d-none d-md-block"}`}>
           <div className="row justify-content-center">
             <div className="col-xxl-10 col-xl-10 col-lg-10 col-md-10">
               <form className="trip-form">

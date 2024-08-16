@@ -1,3 +1,4 @@
+
 .make-model {
     color: #222222;
     font-size: 25px;
@@ -49,7 +50,6 @@
 }
 
 .contact-view-form {
-    max-width: 80%;
     border: 1px solid #DDE4F7;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
     border-radius: 5px;

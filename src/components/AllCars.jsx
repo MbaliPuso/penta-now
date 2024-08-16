@@ -42,6 +42,22 @@ const AllCars = () => {
         pentaApproved: "no",
         stockNo: "UNL10023",
         serviceHistory: "yes",
+        branchInfo: [
+          {
+            branchName: "Lynnwood",
+            address: [
+              {
+                addressLine: "Cnr Simon Vermooten, Lynnwood Rd",
+                town: "Lynnwood",
+                city: "Pretoria",
+                code: "0081"
+              },
+            ],
+            cell: "083 488 5391",
+            email: "lynwood@now.co.za",
+            directionsLink: "https://www.google.com/maps/dir//3+Lenchen+Ave,+Centurion+Central,+Centurion,+0014/@-25.8605149,28.1052648,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x1e9565cd61559953:0x928135b560fffa57!2m2!1d28.1876663!2d-25.8605382?entry=ttu"
+          },
+        ],
       },
       {
         image: carTwo,
@@ -60,6 +76,22 @@ const AllCars = () => {
         pentaApproved: "no",
         stockNo: "PCU10006",
         serviceHistory: "yes",
+        branchInfo: [
+          {
+            branchName: "Centurion",
+            address: [
+              {
+                addressLine: "3 Lenchen Ave, Centurion Central",
+                town: "Centurion",
+                city: "Pretoria",
+                code: "0014"
+              },
+            ],
+            cell: "084 639 8663",
+            email: "centurion@now.co.za",
+            directionsLink: "https://www.google.com/maps?rlz=1C1CHBF_enZA1047ZA1047&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMhIIARAuGBQYrwEYxwEYhwIYgAQyBwgCEAAYgAQyDQgDEAAYhgMYgAQYigUyDQgEEAAYhgMYgAQYigUyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDyoAgCwAgE&um=1&ie=UTF-8&fb=1&gl=za&sa=X&geocode=KVOZVWHNZZUeMVf6_2C1NYGS&daddr=3+Lenchen+Ave,+Centurion+Central,+Centurion,+0014"
+          },
+        ],
       },
       {
         image: carThree,
@@ -78,6 +110,23 @@ const AllCars = () => {
         pentaApproved: "no",
         stockNo: "UNG38",
         serviceHistory: "yes",
+        branchInfo: [
+          {
+            branchName: "Gezina",
+            address: [
+              {
+                addressLine: "1073 SteveBiko Road",
+                town: "Wonderboom South",
+                city: "Pretoria",
+                code: "0084",
+              },
+            ],
+            cell: "083 488 5391",
+            email: "gezina@now.co.za",
+            directionsLink:
+              "https://www.google.com/maps/dir//1073+Steve+Biko+Road,+Wonderboom+South,+Pretoria,+Gauteng/@-25.7019383,28.1970394,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x1ebfd8ce70a712e7:0x9219098789acd039!2m2!1d28.1996143!2d-25.7019383?entry=ttu",
+          },
+        ],
       },
       {
         image: carFour,
@@ -96,6 +145,23 @@ const AllCars = () => {
         pentaApproved: "no",
         stockNo: "PCU10067",
         serviceHistory: "yes",
+        branchInfo: [
+          {
+            branchName: "Centurion",
+            address: [
+              {
+                addressLine: "3 Lenchen Ave, Centurion Central",
+                town: "Centurion",
+                city: "Pretoria",
+                code: "0014",
+              },
+            ],
+            cell: "084 639 8663",
+            email: "centurion@now.co.za",
+            directionsLink:
+              "https://www.google.com/maps?rlz=1C1CHBF_enZA1047ZA1047&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMhIIARAuGBQYrwEYxwEYhwIYgAQyBwgCEAAYgAQyDQgDEAAYhgMYgAQYigUyDQgEEAAYhgMYgAQYigUyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDyoAgCwAgE&um=1&ie=UTF-8&fb=1&gl=za&sa=X&geocode=KVOZVWHNZZUeMVf6_2C1NYGS&daddr=3+Lenchen+Ave,+Centurion+Central,+Centurion,+0014",
+          },
+        ],
       },
       {
         image: carFive,
@@ -114,6 +180,23 @@ const AllCars = () => {
         pentaApproved: "no",
         stockNo: "UNG36",
         serviceHistory: "yes",
+        branchInfo: [
+          {
+            branchName: "Gezina",
+            address: [
+              {
+                addressLine: "1073 SteveBiko Road",
+                town: "Wonderboom South",
+                city: "Pretoria",
+                code: "0084",
+              },
+            ],
+            cell: "083 488 5391",
+            email: "gezina@now.co.za",
+            directionsLink:
+              "https://www.google.com/maps/dir//1073+Steve+Biko+Road,+Wonderboom+South,+Pretoria,+Gauteng/@-25.7019383,28.1970394,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x1ebfd8ce70a712e7:0x9219098789acd039!2m2!1d28.1996143!2d-25.7019383?entry=ttu",
+          },
+        ],
       },
       {
         image: carSix,
@@ -132,6 +215,23 @@ const AllCars = () => {
         pentaApproved: "no",
         stockNo: "UNG51",
         serviceHistory: "yes",
+        branchInfo: [
+          {
+            branchName: "Gezina",
+            address: [
+              {
+                addressLine: "1073 SteveBiko Road",
+                town: "Wonderboom South",
+                city: "Pretoria",
+                code: "0084",
+              },
+            ],
+            cell: "083 488 5391",
+            email: "gezina@now.co.za",
+            directionsLink:
+              "https://www.google.com/maps/dir//1073+Steve+Biko+Road,+Wonderboom+South,+Pretoria,+Gauteng/@-25.7019383,28.1970394,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x1ebfd8ce70a712e7:0x9219098789acd039!2m2!1d28.1996143!2d-25.7019383?entry=ttu",
+          },
+        ],
       },
       {
         image: carSeven,
@@ -150,6 +250,23 @@ const AllCars = () => {
         pentaApproved: "no",
         stockNo: "UNL10035",
         serviceHistory: "yes",
+        branchInfo: [
+          {
+            branchName: "Lynnwood",
+            address: [
+              {
+                addressLine: "Cnr Simon Vermooten, Lynnwood Rd",
+                town: "Lynnwood",
+                city: "Pretoria",
+                code: "0081",
+              },
+            ],
+            cell: "083 488 5391",
+            email: "lynwood@now.co.za",
+            directionsLink:
+              "https://www.google.com/maps/dir//Penta+Now+Lynnwood,+and,+Lynnwood+Road,+Lynnwood,+Pretoria/@-25.7653919,28.2802744,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x1e955f1ef1a42b95:0xdd087d6ca5261286!2m2!1d28.321474!2d-25.7653977?entry=ttu",
+          },
+        ],
       },
       {
         image: carEight,
@@ -168,6 +285,23 @@ const AllCars = () => {
         pentaApproved: "no",
         stockNo: "UNK51",
         serviceHistory: "yes",
+        branchInfo: [
+          {
+            branchName: "Klerksdorp",
+            address: [
+              {
+                addressLine: "70 Buffelsdoorn Rd",
+                town: "Wilkoppies",
+                city: "Klerksdorp",
+                code: "2571",
+              },
+            ],
+            cell: "083 628 3195",
+            email: "klerksdorp@now.co.za",
+            directionsLink:
+              "https://www.google.com/maps/dir//Penta+Now+Klerksdorp,+Buffelsdoorn+Road,+Wilkoppies,+Klerksdorp/@-26.8420402,26.6349068,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x1e96f13a9209dca1:0x653387b48ebe9d5c!2m2!1d26.6761064!2d-26.8420462?entry=ttuu",
+          },
+        ],
       },
       {
         image: carNine,
@@ -186,6 +320,23 @@ const AllCars = () => {
         pentaApproved: "no",
         stockNo: "PCU10025",
         serviceHistory: "yes",
+        branchInfo: [
+          {
+            branchName: "Centurion",
+            address: [
+              {
+                addressLine: "3 Lenchen Ave, Centurion Central",
+                town: "Centurion",
+                city: "Pretoria",
+                code: "0014",
+              },
+            ],
+            cell: "084 639 8663",
+            email: "centurion@now.co.za",
+            directionsLink:
+              "https://www.google.com/maps?rlz=1C1CHBF_enZA1047ZA1047&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMhIIARAuGBQYrwEYxwEYhwIYgAQyBwgCEAAYgAQyDQgDEAAYhgMYgAQYigUyDQgEEAAYhgMYgAQYigUyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDyoAgCwAgE&um=1&ie=UTF-8&fb=1&gl=za&sa=X&geocode=KVOZVWHNZZUeMVf6_2C1NYGS&daddr=3+Lenchen+Ave,+Centurion+Central,+Centurion,+0014",
+          },
+        ],
       },
       {
         image: carTen,
@@ -204,6 +355,23 @@ const AllCars = () => {
         pentaApproved: "no",
         stockNo: "UNG12",
         serviceHistory: "yes",
+        branchInfo: [
+          {
+            branchName: "Gezina",
+            address: [
+              {
+                addressLine: "1073 SteveBiko Road",
+                town: "Wonderboom South",
+                city: "Pretoria",
+                code: "0084",
+              },
+            ],
+            cell: "083 488 5391",
+            email: "gezina@now.co.za",
+            directionsLink:
+              "https://www.google.com/maps/dir//1073+Steve+Biko+Road,+Wonderboom+South,+Pretoria,+Gauteng/@-25.7019383,28.1970394,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x1ebfd8ce70a712e7:0x9219098789acd039!2m2!1d28.1996143!2d-25.7019383?entry=ttu",
+          },
+        ],
       },
       {
         image: carNine,
@@ -222,6 +390,23 @@ const AllCars = () => {
         pentaApproved: "no",
         stockNo: "UNM13",
         serviceHistory: "yes",
+        branchInfo: [
+          {
+            branchName: "Mokopane",
+            address: [
+              {
+                addressLine1: "102 Thabo Mbeki Dr",
+                town: "Mokopane",
+                city: "Limpopo",
+                code: "0601",
+              },
+            ],
+            cell: "079 053 6663",
+            email: "mokopane@now.co.za",
+            directionsLink:
+              "https://www.google.com/maps/dir//102+Thabo+Mbeki+Dr,+Mokopane,+Limpopo,+0601/@-24.187992,28.9706074,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x1ec0b53aaf551993:0x43890edcbdb36306!2m2!1d29.011807!2d-24.1879975?entry=ttu",
+          },
+        ],
       },
       {
         image: carEleven,
@@ -240,6 +425,23 @@ const AllCars = () => {
         pentaApproved: "no",
         stockNo: "PCU10052",
         serviceHistory: "yes",
+        branchInfo: [
+          {
+            branchName: "Centurion",
+            address: [
+              {
+                addressLine: "3 Lenchen Ave, Centurion Central",
+                town: "Centurion",
+                city: "Pretoria",
+                code: "0014",
+              },
+            ],
+            cell: "084 639 8663",
+            email: "centurion@now.co.za",
+            directionsLink:
+              "https://www.google.com/maps?rlz=1C1CHBF_enZA1047ZA1047&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMhIIARAuGBQYrwEYxwEYhwIYgAQyBwgCEAAYgAQyDQgDEAAYhgMYgAQYigUyDQgEEAAYhgMYgAQYigUyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDyoAgCwAgE&um=1&ie=UTF-8&fb=1&gl=za&sa=X&geocode=KVOZVWHNZZUeMVf6_2C1NYGS&daddr=3+Lenchen+Ave,+Centurion+Central,+Centurion,+0014",
+          },
+        ],
       },
       {
         image: carTwelve,
@@ -258,6 +460,23 @@ const AllCars = () => {
         pentaApproved: "no",
         stockNo: "UNM5",
         serviceHistory: "yes",
+        branchInfo: [
+          {
+            branchName: "Mokopane",
+            address: [
+              {
+                addressLine1: "102 Thabo Mbeki Dr",
+                town: "Mokopane",
+                city: "Limpopo",
+                code: "0601",
+              },
+            ],
+            cell: "079 053 6663",
+            email: "mokopane@now.co.za",
+            directionsLink:
+              "https://www.google.com/maps/dir//102+Thabo+Mbeki+Dr,+Mokopane,+Limpopo,+0601/@-24.187992,28.9706074,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x1ec0b53aaf551993:0x43890edcbdb36306!2m2!1d29.011807!2d-24.1879975?entry=ttu",
+          },
+        ],
       },
       {
         image: carThirteen,
@@ -276,6 +495,23 @@ const AllCars = () => {
         pentaApproved: "no",
         stockNo: "UNB96",
         serviceHistory: "yes",
+        branchInfo: [
+          {
+            branchName: "Brits",
+            address: [
+              {
+                addressLine: "73 Spoorweg Street",
+                town: "Brits",
+                city: "North West",
+                code: "0250",
+              },
+            ],
+            cell: "079 488 0244",
+            email: "brits@now.co.za",
+            directionsLink:
+              "https://www.google.com/maps/dir//73+Spoorweg+Street,+Brits/@-25.6426674,27.7341603,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x1ebe3028dfbda5e9:0x72ee6fe05457f1f8!2m2!1d27.7753599!2d-25.6426732?entry=ttu",
+          },
+        ],
       },
       {
         image: carFourteen,
@@ -294,6 +530,23 @@ const AllCars = () => {
         pentaApproved: "yes",
         stockNo: "PCU10057",
         serviceHistory: "yes",
+        branchInfo: [
+          {
+            branchName: "Centurion",
+            address: [
+              {
+                addressLine: "3 Lenchen Ave, Centurion Central",
+                town: "Centurion",
+                city: "Pretoria",
+                code: "0014",
+              },
+            ],
+            cell: "084 639 8663",
+            email: "centurion@now.co.za",
+            directionsLink:
+              "https://www.google.com/maps?rlz=1C1CHBF_enZA1047ZA1047&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMhIIARAuGBQYrwEYxwEYhwIYgAQyBwgCEAAYgAQyDQgDEAAYhgMYgAQYigUyDQgEEAAYhgMYgAQYigUyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDyoAgCwAgE&um=1&ie=UTF-8&fb=1&gl=za&sa=X&geocode=KVOZVWHNZZUeMVf6_2C1NYGS&daddr=3+Lenchen+Ave,+Centurion+Central,+Centurion,+0014",
+          },
+        ],
       },
       {
         image: carFifteen,
@@ -312,6 +565,23 @@ const AllCars = () => {
         pentaApproved: "yes",
         stockNo: "UNG19",
         serviceHistory: "yes",
+        branchInfo: [
+          {
+            branchName: "Gezina",
+            address: [
+              {
+                addressLine: "1073 SteveBiko Road",
+                town: "Wonderboom South",
+                city: "Pretoria",
+                code: "0084",
+              },
+            ],
+            cell: "083 488 5391",
+            email: "gezina@now.co.za",
+            directionsLink:
+              "https://www.google.com/maps/dir//1073+Steve+Biko+Road,+Wonderboom+South,+Pretoria,+Gauteng/@-25.7019383,28.1970394,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x1ebfd8ce70a712e7:0x9219098789acd039!2m2!1d28.1996143!2d-25.7019383?entry=ttu",
+          },
+        ],
       },
       {
         image: carFifteen,
@@ -330,6 +600,23 @@ const AllCars = () => {
         pentaApproved: "yes",
         stockNo: "UNG21",
         serviceHistory: "yes",
+        branchInfo: [
+          {
+            branchName: "Gezina",
+            address: [
+              {
+                addressLine: "1073 SteveBiko Road",
+                town: "Wonderboom South",
+                city: "Pretoria",
+                code: "0084",
+              },
+            ],
+            cell: "083 488 5391",
+            email: "gezina@now.co.za",
+            directionsLink:
+              "https://www.google.com/maps/dir//1073+Steve+Biko+Road,+Wonderboom+South,+Pretoria,+Gauteng/@-25.7019383,28.1970394,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x1ebfd8ce70a712e7:0x9219098789acd039!2m2!1d28.1996143!2d-25.7019383?entry=ttu",
+          },
+        ],
       },
       {
         image: carSixteen,
@@ -348,6 +635,23 @@ const AllCars = () => {
         pentaApproved: "yes",
         stockNo: "UNB55",
         serviceHistory: "yes",
+        branchInfo: [
+          {
+            branchName: "Brits",
+            address: [
+              {
+                addressLine: "73 Spoorweg Street",
+                town: "Brits",
+                city: "North West",
+                code: "0250",
+              },
+            ],
+            cell: "079 488 0244",
+            email: "brits@now.co.za",
+            directionsLink:
+              "https://www.google.com/maps/dir//73+Spoorweg+Street,+Brits/@-25.6426674,27.7341603,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x1ebe3028dfbda5e9:0x72ee6fe05457f1f8!2m2!1d27.7753599!2d-25.6426732?entry=ttu",
+          },
+        ],
       },
       {
         image: carSeventeen,
@@ -366,6 +670,23 @@ const AllCars = () => {
         pentaApproved: "yes",
         stockNo: "UNM17",
         serviceHistory: "yes",
+        branchInfo: [
+          {
+            branchName: "Mokopane",
+            address: [
+              {
+                addressLine1: "102 Thabo Mbeki Dr",
+                town: "Mokopane",
+                city: "Limpopo",
+                code: "0601",
+              },
+            ],
+            cell: "079 053 6663",
+            email: "mokopane@now.co.za",
+            directionsLink:
+              "https://www.google.com/maps/dir//102+Thabo+Mbeki+Dr,+Mokopane,+Limpopo,+0601/@-24.187992,28.9706074,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x1ec0b53aaf551993:0x43890edcbdb36306!2m2!1d29.011807!2d-24.1879975?entry=ttu",
+          },
+        ],
       },
       {
         image: carOne,
@@ -384,6 +705,23 @@ const AllCars = () => {
         pentaApproved: "no",
         stockNo: "UNL10023",
         serviceHistory: "yes",
+        branchInfo: [
+          {
+            branchName: "Lynnwood",
+            address: [
+              {
+                addressLine: "Cnr Simon Vermooten, Lynnwood Rd",
+                town: "Lynnwood",
+                city: "Pretoria",
+                code: "0081",
+              },
+            ],
+            cell: "083 488 5391",
+            email: "lynwood@now.co.za",
+            directionsLink:
+              "https://www.google.com/maps/dir//Penta+Now+Lynnwood,+and,+Lynnwood+Road,+Lynnwood,+Pretoria/@-25.7653919,28.2802744,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x1e955f1ef1a42b95:0xdd087d6ca5261286!2m2!1d28.321474!2d-25.7653977?entry=ttu",
+          },
+        ],
       },
       {
         image: carTwo,
@@ -402,6 +740,23 @@ const AllCars = () => {
         pentaApproved: "no",
         stockNo: "PCU10006",
         serviceHistory: "yes",
+        branchInfo: [
+          {
+            branchName: "Centurion",
+            address: [
+              {
+                addressLine: "3 Lenchen Ave, Centurion Central",
+                town: "Centurion",
+                city: "Pretoria",
+                code: "0014",
+              },
+            ],
+            cell: "084 639 8663",
+            email: "centurion@now.co.za",
+            directionsLink:
+              "https://www.google.com/maps?rlz=1C1CHBF_enZA1047ZA1047&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMhIIARAuGBQYrwEYxwEYhwIYgAQyBwgCEAAYgAQyDQgDEAAYhgMYgAQYigUyDQgEEAAYhgMYgAQYigUyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDyoAgCwAgE&um=1&ie=UTF-8&fb=1&gl=za&sa=X&geocode=KVOZVWHNZZUeMVf6_2C1NYGS&daddr=3+Lenchen+Ave,+Centurion+Central,+Centurion,+0014",
+          },
+        ],
       },
       {
         image: carThree,
@@ -420,6 +775,23 @@ const AllCars = () => {
         pentaApproved: "no",
         stockNo: "UNG38",
         serviceHistory: "yes",
+        branchInfo: [
+          {
+            branchName: "Gezina",
+            address: [
+              {
+                addressLine: "1073 SteveBiko Road",
+                town: "Wonderboom South",
+                city: "Pretoria",
+                code: "0084",
+              },
+            ],
+            cell: "083 488 5391",
+            email: "gezina@now.co.za",
+            directionsLink:
+              "https://www.google.com/maps/dir//1073+Steve+Biko+Road,+Wonderboom+South,+Pretoria,+Gauteng/@-25.7019383,28.1970394,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x1ebfd8ce70a712e7:0x9219098789acd039!2m2!1d28.1996143!2d-25.7019383?entry=ttu",
+          },
+        ],
       },
       {
         image: carFour,
@@ -438,6 +810,23 @@ const AllCars = () => {
         pentaApproved: "no",
         stockNo: "PCU10067",
         serviceHistory: "yes",
+        branchInfo: [
+          {
+            branchName: "Centurion",
+            address: [
+              {
+                addressLine: "3 Lenchen Ave, Centurion Central",
+                town: "Centurion",
+                city: "Pretoria",
+                code: "0014",
+              },
+            ],
+            cell: "084 639 8663",
+            email: "centurion@now.co.za",
+            directionsLink:
+              "https://www.google.com/maps?rlz=1C1CHBF_enZA1047ZA1047&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMhIIARAuGBQYrwEYxwEYhwIYgAQyBwgCEAAYgAQyDQgDEAAYhgMYgAQYigUyDQgEEAAYhgMYgAQYigUyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDyoAgCwAgE&um=1&ie=UTF-8&fb=1&gl=za&sa=X&geocode=KVOZVWHNZZUeMVf6_2C1NYGS&daddr=3+Lenchen+Ave,+Centurion+Central,+Centurion,+0014",
+          },
+        ],
       },
       {
         image: carFive,
@@ -456,6 +845,23 @@ const AllCars = () => {
         pentaApproved: "no",
         stockNo: "UNG36",
         serviceHistory: "yes",
+        branchInfo: [
+          {
+            branchName: "Gezina",
+            address: [
+              {
+                addressLine: "1073 SteveBiko Road",
+                town: "Wonderboom South",
+                city: "Pretoria",
+                code: "0084",
+              },
+            ],
+            cell: "083 488 5391",
+            email: "gezina@now.co.za",
+            directionsLink:
+              "https://www.google.com/maps/dir//1073+Steve+Biko+Road,+Wonderboom+South,+Pretoria,+Gauteng/@-25.7019383,28.1970394,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x1ebfd8ce70a712e7:0x9219098789acd039!2m2!1d28.1996143!2d-25.7019383?entry=ttu",
+          },
+        ],
       },
       {
         image: carSix,
@@ -474,6 +880,23 @@ const AllCars = () => {
         pentaApproved: "no",
         stockNo: "UNG51",
         serviceHistory: "yes",
+        branchInfo: [
+          {
+            branchName: "Gezina",
+            address: [
+              {
+                addressLine: "1073 SteveBiko Road",
+                town: "Wonderboom South",
+                city: "Pretoria",
+                code: "0084",
+              },
+            ],
+            cell: "083 488 5391",
+            email: "gezina@now.co.za",
+            directionsLink:
+              "https://www.google.com/maps/dir//1073+Steve+Biko+Road,+Wonderboom+South,+Pretoria,+Gauteng/@-25.7019383,28.1970394,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x1ebfd8ce70a712e7:0x9219098789acd039!2m2!1d28.1996143!2d-25.7019383?entry=ttu",
+          },
+        ],
       },
       {
         image: carSeven,
@@ -492,6 +915,23 @@ const AllCars = () => {
         pentaApproved: "no",
         stockNo: "UNL10035",
         serviceHistory: "yes",
+        branchInfo: [
+          {
+            branchName: "Lynnwood",
+            address: [
+              {
+                addressLine: "Cnr Simon Vermooten, Lynnwood Rd",
+                town: "Lynnwood",
+                city: "Pretoria",
+                code: "0081",
+              },
+            ],
+            cell: "083 488 5391",
+            email: "lynwood@now.co.za",
+            directionsLink:
+              "https://www.google.com/maps/dir//Penta+Now+Lynnwood,+and,+Lynnwood+Road,+Lynnwood,+Pretoria/@-25.7653919,28.2802744,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x1e955f1ef1a42b95:0xdd087d6ca5261286!2m2!1d28.321474!2d-25.7653977?entry=ttu",
+          },
+        ],
       },
       {
         image: carEight,
@@ -510,6 +950,23 @@ const AllCars = () => {
         pentaApproved: "no",
         stockNo: "UNK51",
         serviceHistory: "yes",
+        branchInfo: [
+          {
+            branchName: "Klerksdorp",
+            address: [
+              {
+                addressLine: "70 Buffelsdoorn Rd",
+                town: "Wilkoppies",
+                city: "Klerksdorp",
+                code: "2571",
+              },
+            ],
+            cell: "083 628 3195",
+            email: "klerksdorp@now.co.za",
+            directionsLink:
+              "https://www.google.com/maps/dir//Penta+Now+Klerksdorp,+Buffelsdoorn+Road,+Wilkoppies,+Klerksdorp/@-26.8420402,26.6349068,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x1e96f13a9209dca1:0x653387b48ebe9d5c!2m2!1d26.6761064!2d-26.8420462?entry=ttuu",
+          },
+        ],
       },
       {
         image: carNine,
@@ -528,6 +985,23 @@ const AllCars = () => {
         pentaApproved: "no",
         stockNo: "PCU10025",
         serviceHistory: "yes",
+        branchInfo: [
+          {
+            branchName: "Centurion",
+            address: [
+              {
+                addressLine: "3 Lenchen Ave, Centurion Central",
+                town: "Centurion",
+                city: "Pretoria",
+                code: "0014",
+              },
+            ],
+            cell: "084 639 8663",
+            email: "centurion@now.co.za",
+            directionsLink:
+              "https://www.google.com/maps?rlz=1C1CHBF_enZA1047ZA1047&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMhIIARAuGBQYrwEYxwEYhwIYgAQyBwgCEAAYgAQyDQgDEAAYhgMYgAQYigUyDQgEEAAYhgMYgAQYigUyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDyoAgCwAgE&um=1&ie=UTF-8&fb=1&gl=za&sa=X&geocode=KVOZVWHNZZUeMVf6_2C1NYGS&daddr=3+Lenchen+Ave,+Centurion+Central,+Centurion,+0014",
+          },
+        ],
       },
       {
         image: carTen,
@@ -546,6 +1020,23 @@ const AllCars = () => {
         pentaApproved: "no",
         stockNo: "UNG12",
         serviceHistory: "yes",
+        branchInfo: [
+          {
+            branchName: "Gezina",
+            address: [
+              {
+                addressLine: "1073 SteveBiko Road",
+                town: "Wonderboom South",
+                city: "Pretoria",
+                code: "0084",
+              },
+            ],
+            cell: "083 488 5391",
+            email: "gezina@now.co.za",
+            directionsLink:
+              "https://www.google.com/maps/dir//1073+Steve+Biko+Road,+Wonderboom+South,+Pretoria,+Gauteng/@-25.7019383,28.1970394,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x1ebfd8ce70a712e7:0x9219098789acd039!2m2!1d28.1996143!2d-25.7019383?entry=ttu",
+          },
+        ],
       },
       {
         image: carNine,
@@ -564,6 +1055,23 @@ const AllCars = () => {
         pentaApproved: "no",
         stockNo: "UNM13",
         serviceHistory: "yes",
+        branchInfo: [
+          {
+            branchName: "Mokopane",
+            address: [
+              {
+                addressLine1: "102 Thabo Mbeki Dr",
+                town: "Mokopane",
+                city: "Limpopo",
+                code: "0601",
+              },
+            ],
+            cell: "079 053 6663",
+            email: "mokopane@now.co.za",
+            directionsLink:
+              "https://www.google.com/maps/dir//102+Thabo+Mbeki+Dr,+Mokopane,+Limpopo,+0601/@-24.187992,28.9706074,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x1ec0b53aaf551993:0x43890edcbdb36306!2m2!1d29.011807!2d-24.1879975?entry=ttu",
+          },
+        ],
       },
       {
         image: carEleven,
@@ -582,6 +1090,23 @@ const AllCars = () => {
         pentaApproved: "no",
         stockNo: "PCU10052",
         serviceHistory: "yes",
+        branchInfo: [
+          {
+            branchName: "Centurion",
+            address: [
+              {
+                addressLine: "3 Lenchen Ave, Centurion Central",
+                town: "Centurion",
+                city: "Pretoria",
+                code: "0014",
+              },
+            ],
+            cell: "084 639 8663",
+            email: "centurion@now.co.za",
+            directionsLink:
+              "https://www.google.com/maps?rlz=1C1CHBF_enZA1047ZA1047&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMhIIARAuGBQYrwEYxwEYhwIYgAQyBwgCEAAYgAQyDQgDEAAYhgMYgAQYigUyDQgEEAAYhgMYgAQYigUyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDyoAgCwAgE&um=1&ie=UTF-8&fb=1&gl=za&sa=X&geocode=KVOZVWHNZZUeMVf6_2C1NYGS&daddr=3+Lenchen+Ave,+Centurion+Central,+Centurion,+0014",
+          },
+        ],
       },
       {
         image: carFourteen,
@@ -600,6 +1125,23 @@ const AllCars = () => {
         pentaApproved: "yes",
         stockNo: "PCU10057",
         serviceHistory: "yes",
+        branchInfo: [
+          {
+            branchName: "Centurion",
+            address: [
+              {
+                addressLine: "3 Lenchen Ave, Centurion Central",
+                town: "Centurion",
+                city: "Pretoria",
+                code: "0014",
+              },
+            ],
+            cell: "084 639 8663",
+            email: "centurion@now.co.za",
+            directionsLink:
+              "https://www.google.com/maps?rlz=1C1CHBF_enZA1047ZA1047&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMhIIARAuGBQYrwEYxwEYhwIYgAQyBwgCEAAYgAQyDQgDEAAYhgMYgAQYigUyDQgEEAAYhgMYgAQYigUyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDyoAgCwAgE&um=1&ie=UTF-8&fb=1&gl=za&sa=X&geocode=KVOZVWHNZZUeMVf6_2C1NYGS&daddr=3+Lenchen+Ave,+Centurion+Central,+Centurion,+0014",
+          },
+        ],
       },
       {
         image: carFifteen,
@@ -618,6 +1160,23 @@ const AllCars = () => {
         pentaApproved: "yes",
         stockNo: "UNG19",
         serviceHistory: "yes",
+        branchInfo: [
+          {
+            branchName: "Gezina",
+            address: [
+              {
+                addressLine: "1073 SteveBiko Road",
+                town: "Wonderboom South",
+                city: "Pretoria",
+                code: "0084",
+              },
+            ],
+            cell: "083 488 5391",
+            email: "gezina@now.co.za",
+            directionsLink:
+              "https://www.google.com/maps/dir//1073+Steve+Biko+Road,+Wonderboom+South,+Pretoria,+Gauteng/@-25.7019383,28.1970394,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x1ebfd8ce70a712e7:0x9219098789acd039!2m2!1d28.1996143!2d-25.7019383?entry=ttu",
+          },
+        ],
       },
       {
         image: carFifteen,
@@ -636,6 +1195,23 @@ const AllCars = () => {
         pentaApproved: "yes",
         stockNo: "UNG21",
         serviceHistory: "yes",
+        branchInfo: [
+          {
+            branchName: "Gezina",
+            address: [
+              {
+                addressLine: "1073 SteveBiko Road",
+                town: "Wonderboom South",
+                city: "Pretoria",
+                code: "0084",
+              },
+            ],
+            cell: "083 488 5391",
+            email: "gezina@now.co.za",
+            directionsLink:
+              "https://www.google.com/maps/dir//1073+Steve+Biko+Road,+Wonderboom+South,+Pretoria,+Gauteng/@-25.7019383,28.1970394,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x1ebfd8ce70a712e7:0x9219098789acd039!2m2!1d28.1996143!2d-25.7019383?entry=ttu",
+          },
+        ],
       },
       {
         image: carSixteen,
@@ -654,6 +1230,23 @@ const AllCars = () => {
         pentaApproved: "yes",
         stockNo: "UNB55",
         serviceHistory: "yes",
+        branchInfo: [
+          {
+            branchName: "Brits",
+            address: [
+              {
+                addressLine: "73 Spoorweg Street",
+                town: "Brits",
+                city: "North West",
+                code: "0250",
+              },
+            ],
+            cell: "079 488 0244",
+            email: "brits@now.co.za",
+            directionsLink:
+              "https://www.google.com/maps/dir//73+Spoorweg+Street,+Brits/@-25.6426674,27.7341603,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x1ebe3028dfbda5e9:0x72ee6fe05457f1f8!2m2!1d27.7753599!2d-25.6426732?entry=ttu",
+          },
+        ],
       },
       {
         image: carSeventeen,
@@ -672,6 +1265,23 @@ const AllCars = () => {
         pentaApproved: "yes",
         stockNo: "UNM17",
         serviceHistory: "yes",
+        branchInfo: [
+          {
+            branchName: "Mokopane",
+            address: [
+              {
+                addressLine1: "102 Thabo Mbeki Dr",
+                town: "Mokopane",
+                city: "Limpopo",
+                code: "0601",
+              },
+            ],
+            cell: "079 053 6663",
+            email: "mokopane@now.co.za",
+            directionsLink:
+              "https://www.google.com/maps/dir//102+Thabo+Mbeki+Dr,+Mokopane,+Limpopo,+0601/@-24.187992,28.9706074,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x1ec0b53aaf551993:0x43890edcbdb36306!2m2!1d29.011807!2d-24.1879975?entry=ttu",
+          },
+        ],
       },
     ],
     []
@@ -792,7 +1402,7 @@ const AllCars = () => {
         >
           {showFilters ? "Hide Filters" : "Show Filters"}
         </button>
-        <div className={showFilters ? "d-block" : "d-none d-md-block"}>
+        <div className={`container ${showFilters ? "d-block" : "d-none d-md-block"}`}>
           <div className="row justify-content-center">
             <div className="col-xxl-10 col-xl-10 col-lg-10 col-md-10">
               <form className="trip-form">
