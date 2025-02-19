@@ -77,9 +77,9 @@ TABLE CONTENT
 	--bs-button-bg-2: #f2f4f6;
 	--bs-button-text: #101010;
 	--bs-button-text-2: #000000;
-	--bs-brand-2: #70f46d;
-	--bs-brand-2-dark: #70f46d;
-	--bs-brand-2-darken: #5edd5b;
+	--bs-brand-2: #0A69D3;
+	--bs-brand-2-dark: #0A69D3;
+	--bs-brand-2-darken: #0358ba;
 	--bs-brand-2-light: #2d4a2c;
 	--bs-link-hover-color: #235922;
 	--bs-brand-1: #8acfff;
@@ -5944,7 +5944,7 @@ label {
 }
 
 .header.header-fixed.sticky-bar.stick {
-	background-color: rgba(45, 74, 44, 0.6);
+	background-color: rgba(44, 58, 74, 0.6);
 	border-bottom: 0;
 	-webkit-backdrop-filter: blur(50px);
 	backdrop-filter: blur(50px);

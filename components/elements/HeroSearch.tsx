@@ -3,18 +3,28 @@ import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 import MyDatePicker from "./MyDatePicker";
+import { DropdownItem } from "react-bootstrap";
+
+interface Vehicle {
+  ID: string;
+  Carname: string;
+  Make: string;
+  Model: string;
+  Price: string;
+}
 
 export default function HeroSearch() {
-  const [vehicles, setVehicles] = useState([]);
-  const [makes, setMakes] = useState([]);
-  const [selectedMake, setSelectedMake] = useState("");
-  const [selectedModel, setSelectedModel] = useState("");
+  const [vehicles, setVehicles] = useState<Vehicle[]>([]);
+  const [makes, setMakes] = useState<string[]>([]);
+  const [models, setModels] = useState<string[]>([]);
+  const [selectedMake, setSelectedMake] = useState<string | null>(null);
+  const [selectedModel, setSelectedModel] = useState<string | null>(null);
 
   useEffect(() => {
     // Fetch car data from JSON file
     fetch("https://demos.kickass.co.za/penta-now/vehicles.php")
       .then((response) => response.json())
-      .then((data) => {
+      .then((data: Vehicle[]) => {
         setVehicles(data);
 
         // Extract makes
@@ -24,10 +34,14 @@ export default function HeroSearch() {
       .catch((error) => console.error("Error fetching car data:", error));
   }, []);
 
-  // Handle Make Selection
-  const handleMakeSelect = (make) => {
+  const handleMakeSelect = (
+    event: React.MouseEvent<HTMLElement>,
+    make: string
+  ) => {
+    event.preventDefault();
+
     setSelectedMake(make);
-    setSelectedModel(""); // Reset model selection
+    setSelectedModel(null); // Reset model selection
 
     // Extract unique models based on selected make
     const filteredModels = [
@@ -53,11 +67,16 @@ export default function HeroSearch() {
             </Dropdown.Toggle>
             <Dropdown.Menu as="ul" className="dropdown-menu">
               {makes.map((make, index) => (
-                <Dropdown.Item as="li" key={index} onClick={() => handleMakeSelect(make)}>
+                <DropdownItem
+                  as="li"
+                  key={index}
+                  onClick={(e) => handleMakeSelect(e, make)}
+                >
                   <Link className="dropdown-item" href="#">
+                    {" "}
                     {make}
                   </Link>
-                </Dropdown.Item>
+                </DropdownItem>
               ))}
             </Dropdown.Menu>
           </Dropdown>
@@ -69,24 +88,16 @@ export default function HeroSearch() {
               as="div"
               className="btn btn-secondary dropdown-toggle btn-dropdown-search location-search"
             >
-              Delaware, USA
+              {selectedModel || (selectedMake ? "Select Model" : "Choose Make")}
             </Dropdown.Toggle>
             <Dropdown.Menu as="ul" className="dropdown-menu">
-              <li>
-                <Link className="dropdown-item" href="#">
-                  Paris, France
-                </Link>
-              </li>
-              <li>
-                <Link className="dropdown-item" href="#">
-                  Tokyo, Japan
-                </Link>
-              </li>
-              <li>
-                <Link className="dropdown-item" href="#">
-                  New York City, USA
-                </Link>
-              </li>
+              {models.map((model, index) => (
+                <DropdownItem as="li" key={index} onClick={() => setSelectedModel(model)}>
+                  <Link className="dropdown-item" href="#">
+                    {model}
+                  </Link>
+                </DropdownItem>
+              ))}
             </Dropdown.Menu>
           </Dropdown>
         </div>
